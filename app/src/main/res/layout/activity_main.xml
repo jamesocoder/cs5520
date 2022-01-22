@@ -22,7 +22,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="88dp"
         android:onClick="convertCurrency"
-        android:text="@string/convert_string"
+        android:text="@string/about_me"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.501"
         app:layout_constraintStart_toStartOf="parent"
