@@ -2,10 +2,13 @@ package edu.neu.madcourse.numad22sp_jamesouk;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Context;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
+
 import java.util.Locale;
 
 public class MainActivity extends AppCompatActivity {
@@ -16,17 +19,13 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 
-    // See txt pg 25 for explanation of code
-    public void convertCurrency(View view) {
-        EditText dollarText = findViewById(R.id.dollarText);
-        TextView textView = findViewById(R.id.textView);
+    // Source: https://developer.android.com/guide/topics/ui/notifiers/toasts#java
+    public void displayMe(View view) {
+        Context context = getApplicationContext();
+        CharSequence aboutMe = "James Ouk - ouk.j@northeastern.edu";
+        int duration = Toast.LENGTH_LONG;
 
-        if (!dollarText.getText().toString().equals("")) {
-            float dollarValue = Float.parseFloat(dollarText.getText().toString());
-            float euroValue = dollarValue * 0.85F;
-            textView.setText(String.format(Locale.ENGLISH,"%f",euroValue));
-        } else {
-            textView.setText(R.string.no_value_string);
-        }
+        Toast toast = Toast.makeText(context, aboutMe, duration);
+        toast.show();
     }
 }
