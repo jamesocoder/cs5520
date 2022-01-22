@@ -1,0 +1,4 @@
+edu/neu/madcourse/numad22sp_jamesouk/MainActivity.java
+ edu.neu.madcourse.numad22sp_jamesouk.MainActivity
+edu/neu/madcourse/numad22sp_jamesouk/BuildConfig.java
+ edu.neu.madcourse.numad22sp_jamesouk.BuildConfig

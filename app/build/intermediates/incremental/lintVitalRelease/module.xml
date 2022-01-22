@@ -1,0 +1,19 @@
+<lint-module
+    format="1"
+    dir="C:\Users\james\OneDrive\Documents\NEU_2022S_CS5520-02\HW\app"
+    name=":app"
+    type="APP"
+    maven="NUMAD22Sp_JamesOuk:app:"
+    gradle="7.0.4"
+    buildFolder="build"
+    bootClassPath="C:\Users\james\AppData\Local\Android\Sdk\platforms\android-32\android.jar;C:\Users\james\AppData\Local\Android\Sdk\build-tools\30.0.2\core-lambda-stubs.jar"
+    javaSourceLevel="1.8"
+    compileTarget="android-32"
+    neverShrinking="true">
+  <lintOptions
+      abortOnError="true"
+      absolutePaths="true"
+      checkReleaseBuilds="true"
+      explainIssues="true"/>
+  <variant name="release"/>
+</lint-module>
