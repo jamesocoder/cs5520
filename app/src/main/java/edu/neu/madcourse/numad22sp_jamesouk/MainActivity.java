@@ -3,10 +3,9 @@ package edu.neu.madcourse.numad22sp_jamesouk;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.EditText;
-import android.widget.TextView;
 import android.widget.Toast;
 
 import java.util.Locale;
@@ -19,13 +18,25 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 
+    /*
+        A method becomes compatible for use with a View's onClick Event when a View is the only
+        parameter in its declaration.
+        Source: https://developer.android.com/training/basics/firstapp/starting-activity#java
+     */
     public void onClick(View view){
         switch (view.getId()){
             case R.id.a01:
                 displayMe();
+                break;
+            case R.id.a02:
+                // Open Assignment 2's Activity
+                Intent startA02 = new Intent(this, ActA02.class);
+                startActivity(startA02);
+                break;
         }
     }
 
+    // Display a toast notification supplying my information
     // Source: https://developer.android.com/guide/topics/ui/notifiers/toasts#java
     public void displayMe() {
         Context context = getApplicationContext();

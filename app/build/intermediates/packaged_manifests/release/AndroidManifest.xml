@@ -19,6 +19,9 @@
         android:testOnly="true"
         android:theme="@style/Theme.NUMAD22Sp_JamesOuk" >
         <activity
+            android:name="edu.neu.madcourse.numad22sp_jamesouk.ActA02"
+            android:exported="false" />
+        <activity
             android:name="edu.neu.madcourse.numad22sp_jamesouk.MainActivity"
             android:exported="true" >
             <intent-filter>

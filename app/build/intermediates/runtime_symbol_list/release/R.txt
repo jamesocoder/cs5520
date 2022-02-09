@@ -1697,6 +1697,8 @@ int id SHOW_PROGRESS 0x7f08000a
 int id SYM 0x7f08000b
 int id TOP_END 0x7f08000c
 int id TOP_START 0x7f08000d
+int id a01 0x7f08019c
+int id a02 0x7f08019d
 int id accelerate 0x7f08000e
 int id accessibility_action_clickable_span 0x7f08000f
 int id accessibility_custom_action_0 0x7f080010
@@ -1770,7 +1772,6 @@ int id beginning 0x7f080053
 int id blocking 0x7f080054
 int id bottom 0x7f080055
 int id bounce 0x7f080056
-int id button 0x7f080057
 int id buttonPanel 0x7f080058
 int id cache_measures 0x7f080059
 int id cancel_button 0x7f08005a
@@ -2155,6 +2156,7 @@ int layout abc_search_dropdown_item_icons_2line 0x7f0b0018
 int layout abc_search_view 0x7f0b0019
 int layout abc_select_dialog_material 0x7f0b001a
 int layout abc_tooltip 0x7f0b001b
+int layout activity_act_a02 0x7f0b006f
 int layout activity_main 0x7f0b001c
 int layout custom_dialog 0x7f0b001d
 int layout design_bottom_navigation_item 0x7f0b001e
@@ -2241,6 +2243,7 @@ int layout text_view_without_line_height 0x7f0b006e
 int mipmap ic_launcher_jo 0x7f0c0000
 int mipmap ic_launcher_jo_round 0x7f0c0001
 int plurals mtrl_badge_content_description 0x7f0d0000
+int string a02 0x7f0e0065
 int string abc_action_bar_home_description 0x7f0e0000
 int string abc_action_bar_up_description 0x7f0e0001
 int string abc_action_menu_overflow_description 0x7f0e0002
