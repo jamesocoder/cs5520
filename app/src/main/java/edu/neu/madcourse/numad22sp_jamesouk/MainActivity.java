@@ -19,8 +19,15 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 
+    public void onClick(View view){
+        switch (view.getId()){
+            case R.id.a01:
+                displayMe();
+        }
+    }
+
     // Source: https://developer.android.com/guide/topics/ui/notifiers/toasts#java
-    public void displayMe(View view) {
+    public void displayMe() {
         Context context = getApplicationContext();
         CharSequence aboutMe = "James Ouk - ouk.j@northeastern.edu";
         int duration = Toast.LENGTH_LONG;
