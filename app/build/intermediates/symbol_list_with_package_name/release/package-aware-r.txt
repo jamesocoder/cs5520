@@ -1773,6 +1773,12 @@ id beginning
 id blocking
 id bottom
 id bounce
+id btn_a
+id btn_b
+id btn_c
+id btn_d
+id btn_e
+id btn_f
 id buttonPanel
 id cache_measures
 id cancel_button
@@ -2085,6 +2091,7 @@ id transition_position
 id transition_scene_layoutid_cache
 id transition_transform
 id triangle
+id txt_pressed
 id unchecked
 id uniform
 id unlabeled
@@ -2277,6 +2284,12 @@ string app_name
 string appbar_scrolling_view_behavior
 string bottom_sheet_behavior
 string bottomsheet_action_expand_halfway
+string btn_a
+string btn_b
+string btn_c
+string btn_d
+string btn_e
+string btn_f
 string character_counter_content_description
 string character_counter_overflowed_content_description
 string character_counter_pattern
@@ -2346,6 +2359,7 @@ string path_password_eye_mask_visible
 string path_password_strike_through
 string search_menu_title
 string status_bar_notification_info_overflow
+string txt_pressed
 style AlertDialog_AppCompat
 style AlertDialog_AppCompat_Light
 style AndroidThemeColorAccentYellow

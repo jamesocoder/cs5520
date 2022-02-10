@@ -1772,6 +1772,12 @@ int id beginning 0x7f080053
 int id blocking 0x7f080054
 int id bottom 0x7f080055
 int id bounce 0x7f080056
+int id btn_a 0x7f08019e
+int id btn_b 0x7f08019f
+int id btn_c 0x7f0801a0
+int id btn_d 0x7f0801a1
+int id btn_e 0x7f0801a2
+int id btn_f 0x7f0801a3
 int id buttonPanel 0x7f080058
 int id cache_measures 0x7f080059
 int id cancel_button 0x7f08005a
@@ -2084,6 +2090,7 @@ int id transition_position 0x7f08018c
 int id transition_scene_layoutid_cache 0x7f08018d
 int id transition_transform 0x7f08018e
 int id triangle 0x7f08018f
+int id txt_pressed 0x7f0801a4
 int id unchecked 0x7f080190
 int id uniform 0x7f080191
 int id unlabeled 0x7f080192
@@ -2276,6 +2283,12 @@ int string app_name 0x7f0e001c
 int string appbar_scrolling_view_behavior 0x7f0e001d
 int string bottom_sheet_behavior 0x7f0e001e
 int string bottomsheet_action_expand_halfway 0x7f0e001f
+int string btn_a 0x7f0e0066
+int string btn_b 0x7f0e0067
+int string btn_c 0x7f0e0068
+int string btn_d 0x7f0e0069
+int string btn_e 0x7f0e006a
+int string btn_f 0x7f0e006b
 int string character_counter_content_description 0x7f0e0020
 int string character_counter_overflowed_content_description 0x7f0e0021
 int string character_counter_pattern 0x7f0e0022
@@ -2345,6 +2358,7 @@ int string path_password_eye_mask_visible 0x7f0e0061
 int string path_password_strike_through 0x7f0e0062
 int string search_menu_title 0x7f0e0063
 int string status_bar_notification_info_overflow 0x7f0e0064
+int string txt_pressed 0x7f0e006c
 int style AlertDialog_AppCompat 0x7f0f0000
 int style AlertDialog_AppCompat_Light 0x7f0f0001
 int style AndroidThemeColorAccentYellow 0x7f0f0002
