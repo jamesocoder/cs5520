@@ -26,8 +26,9 @@ public class ActA02 extends AppCompatActivity {
         TextView pressed = (TextView) findViewById(R.id.txt_pressed);
 
         /*
-            In order to work with translations (stored in the XML resources), pull the currently
-            displayed text out of the Views and use them instead of hard-coded Strings.
+            In order to work with translations (stored in the XML resources), pull the original String
+            value from the resources. (Will need to think of way to determine locality to pull the
+            correct String later).
          */
         String str = getString(R.string.txt_pressed);
         pressed.setText(
