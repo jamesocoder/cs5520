@@ -29,34 +29,36 @@
 20        android:theme="@style/Theme.NUMAD22Sp_JamesOuk" >
 20-->C:\Users\james\OneDrive\Documents\NEU_2022S_CS5520-02\HW\app\src\main\AndroidManifest.xml:11:9-56
 21        <activity
-21-->C:\Users\james\OneDrive\Documents\NEU_2022S_CS5520-02\HW\app\src\main\AndroidManifest.xml:12:9-14:40
+21-->C:\Users\james\OneDrive\Documents\NEU_2022S_CS5520-02\HW\app\src\main\AndroidManifest.xml:12:9-15:74
 22            android:name="edu.neu.madcourse.numad22sp_jamesouk.A04"
 22-->C:\Users\james\OneDrive\Documents\NEU_2022S_CS5520-02\HW\app\src\main\AndroidManifest.xml:13:13-32
-23            android:exported="false" />
+23            android:exported="false"
 23-->C:\Users\james\OneDrive\Documents\NEU_2022S_CS5520-02\HW\app\src\main\AndroidManifest.xml:14:13-37
-24        <activity
-24-->C:\Users\james\OneDrive\Documents\NEU_2022S_CS5520-02\HW\app\src\main\AndroidManifest.xml:15:9-17:40
-25            android:name="edu.neu.madcourse.numad22sp_jamesouk.A03"
-25-->C:\Users\james\OneDrive\Documents\NEU_2022S_CS5520-02\HW\app\src\main\AndroidManifest.xml:16:13-32
-26            android:exported="false" />
-26-->C:\Users\james\OneDrive\Documents\NEU_2022S_CS5520-02\HW\app\src\main\AndroidManifest.xml:17:13-37
-27        <activity
-27-->C:\Users\james\OneDrive\Documents\NEU_2022S_CS5520-02\HW\app\src\main\AndroidManifest.xml:18:9-26:20
-28            android:name="edu.neu.madcourse.numad22sp_jamesouk.MainActivity"
-28-->C:\Users\james\OneDrive\Documents\NEU_2022S_CS5520-02\HW\app\src\main\AndroidManifest.xml:19:13-41
-29            android:exported="true" >
-29-->C:\Users\james\OneDrive\Documents\NEU_2022S_CS5520-02\HW\app\src\main\AndroidManifest.xml:20:13-36
-30            <intent-filter>
-30-->C:\Users\james\OneDrive\Documents\NEU_2022S_CS5520-02\HW\app\src\main\AndroidManifest.xml:21:13-25:29
-31                <action android:name="android.intent.action.MAIN" />
-31-->C:\Users\james\OneDrive\Documents\NEU_2022S_CS5520-02\HW\app\src\main\AndroidManifest.xml:22:17-69
-31-->C:\Users\james\OneDrive\Documents\NEU_2022S_CS5520-02\HW\app\src\main\AndroidManifest.xml:22:25-66
-32
-33                <category android:name="android.intent.category.LAUNCHER" />
-33-->C:\Users\james\OneDrive\Documents\NEU_2022S_CS5520-02\HW\app\src\main\AndroidManifest.xml:24:17-77
-33-->C:\Users\james\OneDrive\Documents\NEU_2022S_CS5520-02\HW\app\src\main\AndroidManifest.xml:24:27-74
-34            </intent-filter>
-35        </activity>
-36    </application>
-37
-38</manifest>
+24            android:theme="@style/Theme.NUMAD22Sp_JamesOuk.NoActionBar" />
+24-->C:\Users\james\OneDrive\Documents\NEU_2022S_CS5520-02\HW\app\src\main\AndroidManifest.xml:15:13-72
+25        <activity
+25-->C:\Users\james\OneDrive\Documents\NEU_2022S_CS5520-02\HW\app\src\main\AndroidManifest.xml:16:9-18:40
+26            android:name="edu.neu.madcourse.numad22sp_jamesouk.A03"
+26-->C:\Users\james\OneDrive\Documents\NEU_2022S_CS5520-02\HW\app\src\main\AndroidManifest.xml:17:13-32
+27            android:exported="false" />
+27-->C:\Users\james\OneDrive\Documents\NEU_2022S_CS5520-02\HW\app\src\main\AndroidManifest.xml:18:13-37
+28        <activity
+28-->C:\Users\james\OneDrive\Documents\NEU_2022S_CS5520-02\HW\app\src\main\AndroidManifest.xml:19:9-26:20
+29            android:name="edu.neu.madcourse.numad22sp_jamesouk.MainActivity"
+29-->C:\Users\james\OneDrive\Documents\NEU_2022S_CS5520-02\HW\app\src\main\AndroidManifest.xml:20:13-41
+30            android:exported="true" >
+30-->C:\Users\james\OneDrive\Documents\NEU_2022S_CS5520-02\HW\app\src\main\AndroidManifest.xml:21:13-36
+31            <intent-filter>
+31-->C:\Users\james\OneDrive\Documents\NEU_2022S_CS5520-02\HW\app\src\main\AndroidManifest.xml:22:13-25:29
+32                <action android:name="android.intent.action.MAIN" />
+32-->C:\Users\james\OneDrive\Documents\NEU_2022S_CS5520-02\HW\app\src\main\AndroidManifest.xml:23:17-69
+32-->C:\Users\james\OneDrive\Documents\NEU_2022S_CS5520-02\HW\app\src\main\AndroidManifest.xml:23:25-66
+33
+34                <category android:name="android.intent.category.LAUNCHER" />
+34-->C:\Users\james\OneDrive\Documents\NEU_2022S_CS5520-02\HW\app\src\main\AndroidManifest.xml:24:17-77
+34-->C:\Users\james\OneDrive\Documents\NEU_2022S_CS5520-02\HW\app\src\main\AndroidManifest.xml:24:27-74
+35            </intent-filter>
+36        </activity>
+37    </application>
+38
+39</manifest>

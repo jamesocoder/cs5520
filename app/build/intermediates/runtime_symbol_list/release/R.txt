@@ -1850,6 +1850,7 @@ int id enterAlwaysCollapsed 0x7f0800a3
 int id exitUntilCollapsed 0x7f0800a4
 int id expand_activities_button 0x7f0800a5
 int id expanded_menu 0x7f0800a6
+int id fab 0x7f0801a6
 int id fade 0x7f0800a7
 int id fill 0x7f0800a8
 int id fill_horizontal 0x7f0800a9
@@ -2827,6 +2828,7 @@ int style Theme_MaterialComponents_Light_NoActionBar_Bridge 0x7f0f01cd
 int style Theme_MaterialComponents_NoActionBar 0x7f0f01ce
 int style Theme_MaterialComponents_NoActionBar_Bridge 0x7f0f01cf
 int style Theme_NUMAD22Sp_JamesOuk 0x7f0f01d0
+int style Theme_NUMAD22Sp_JamesOuk_NoActionBar 0x7f0f02cc
 int style ThemeOverlay_AppCompat 0x7f0f01d1
 int style ThemeOverlay_AppCompat_ActionBar 0x7f0f01d2
 int style ThemeOverlay_AppCompat_Dark 0x7f0f01d3

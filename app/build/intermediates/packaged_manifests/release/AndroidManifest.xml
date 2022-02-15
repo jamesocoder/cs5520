@@ -20,7 +20,8 @@
         android:theme="@style/Theme.NUMAD22Sp_JamesOuk" >
         <activity
             android:name="edu.neu.madcourse.numad22sp_jamesouk.A04"
-            android:exported="false" />
+            android:exported="false"
+            android:theme="@style/Theme.NUMAD22Sp_JamesOuk.NoActionBar" />
         <activity
             android:name="edu.neu.madcourse.numad22sp_jamesouk.A03"
             android:exported="false" />

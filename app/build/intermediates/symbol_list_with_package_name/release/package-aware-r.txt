@@ -1851,6 +1851,7 @@ id enterAlwaysCollapsed
 id exitUntilCollapsed
 id expand_activities_button
 id expanded_menu
+id fab
 id fade
 id fill
 id fill_horizontal
@@ -2828,6 +2829,7 @@ style Theme_MaterialComponents_Light_NoActionBar_Bridge
 style Theme_MaterialComponents_NoActionBar
 style Theme_MaterialComponents_NoActionBar_Bridge
 style Theme_NUMAD22Sp_JamesOuk
+style Theme_NUMAD22Sp_JamesOuk_NoActionBar
 style ThemeOverlay_AppCompat
 style ThemeOverlay_AppCompat_ActionBar
 style ThemeOverlay_AppCompat_Dark

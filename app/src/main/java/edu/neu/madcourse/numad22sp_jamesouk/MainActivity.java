@@ -28,8 +28,12 @@ public class MainActivity extends AppCompatActivity {
                 break;
             case R.id.a03:
                 // Open Assignment 2's Activity
-                Intent startA02 = new Intent(this, A03.class);
-                startActivity(startA02);
+                Intent startA03 = new Intent(this, A03.class);
+                startActivity(startA03);
+                break;
+            case R.id.a04:
+                Intent startA04 = new Intent(this, A04.class);
+                startActivity(startA04);
                 break;
         }
     }

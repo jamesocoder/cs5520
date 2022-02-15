@@ -6394,6 +6394,9 @@
         
         <item name="android:statusBarColor" ns2:targetApi="l">?attr/colorPrimaryVariant</item>
         
+    </style><style name="Theme.NUMAD22Sp_JamesOuk.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
     </style></file><file path="C:\Users\james\OneDrive\Documents\NEU_2022S_CS5520-02\HW\app\src\main\res\values-night\themes.xml" qualifiers="night-v8"><style name="Theme.NUMAD22Sp_JamesOuk" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
         
         <item name="colorPrimary">@color/purple_200</item>
