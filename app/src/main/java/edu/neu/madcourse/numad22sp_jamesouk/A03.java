@@ -3,17 +3,16 @@ package edu.neu.madcourse.numad22sp_jamesouk;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
-import android.text.Editable;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
-public class ActA02 extends AppCompatActivity {
+public class A03 extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_act_a02);
+        setContentView(R.layout.activity_a03);
     }
 
     /*

@@ -8,8 +8,6 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Toast;
 
-import java.util.Locale;
-
 public class MainActivity extends AppCompatActivity {
 
     @Override
@@ -30,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
                 break;
             case R.id.a02:
                 // Open Assignment 2's Activity
-                Intent startA02 = new Intent(this, ActA02.class);
+                Intent startA02 = new Intent(this, A03.class);
                 startActivity(startA02);
                 break;
         }
