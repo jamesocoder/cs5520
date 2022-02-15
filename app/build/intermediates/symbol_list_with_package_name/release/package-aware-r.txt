@@ -1699,7 +1699,8 @@ id SYM
 id TOP_END
 id TOP_START
 id a01
-id a02
+id a03
+id a04
 id accelerate
 id accessibility_action_clickable_span
 id accessibility_custom_action_0
@@ -2164,7 +2165,8 @@ layout abc_search_dropdown_item_icons_2line
 layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
-layout activity_act_a02
+layout activity_a03
+layout activity_a04
 layout activity_main
 layout custom_dialog
 layout design_bottom_navigation_item
@@ -2251,7 +2253,8 @@ layout text_view_without_line_height
 mipmap ic_launcher_jo
 mipmap ic_launcher_jo_round
 plurals mtrl_badge_content_description
-string a02
+string a03
+string a04
 string abc_action_bar_home_description
 string abc_action_bar_up_description
 string abc_action_menu_overflow_description

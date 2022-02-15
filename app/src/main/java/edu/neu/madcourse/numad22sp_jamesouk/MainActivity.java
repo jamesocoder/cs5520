@@ -26,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
             case R.id.a01:
                 displayMe();
                 break;
-            case R.id.a02:
+            case R.id.a03:
                 // Open Assignment 2's Activity
                 Intent startA02 = new Intent(this, A03.class);
                 startActivity(startA02);
