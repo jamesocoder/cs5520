@@ -1783,6 +1783,8 @@ id btn_f
 id buttonPanel
 id cache_measures
 id cancel_button
+id card_title
+id card_url
 id center
 id center_horizontal
 id center_vertical
@@ -1982,6 +1984,7 @@ id position
 id postLayout
 id progress_circular
 id progress_horizontal
+id rView
 id radio
 id ratio
 id rectangles
@@ -2169,6 +2172,7 @@ layout abc_tooltip
 layout activity_a03
 layout activity_a04
 layout activity_main
+layout card_a04
 layout custom_dialog
 layout design_bottom_navigation_item
 layout design_bottom_sheet_dialog
@@ -2256,6 +2260,8 @@ mipmap ic_launcher_jo_round
 plurals mtrl_badge_content_description
 string a03
 string a04
+string a04Title
+string a04Url
 string abc_action_bar_home_description
 string abc_action_bar_up_description
 string abc_action_menu_overflow_description

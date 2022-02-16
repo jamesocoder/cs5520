@@ -28,6 +28,10 @@
         "source": "C:\\Users\\james\\OneDrive\\Documents\\NEU_2022S_CS5520-02\\HW\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher_jo_round.png"
     },
     {
+        "merged": "C:\\Users\\james\\OneDrive\\Documents\\NEU_2022S_CS5520-02\\HW\\app\\build\\intermediates\\merged_res\\release\\layout_card_a04.xml.flat",
+        "source": "C:\\Users\\james\\OneDrive\\Documents\\NEU_2022S_CS5520-02\\HW\\app\\src\\main\\res\\layout\\card_a04.xml"
+    },
+    {
         "merged": "C:\\Users\\james\\OneDrive\\Documents\\NEU_2022S_CS5520-02\\HW\\app\\build\\intermediates\\merged_res\\release\\mipmap-xhdpi_ic_launcher_jo.png.flat",
         "source": "C:\\Users\\james\\OneDrive\\Documents\\NEU_2022S_CS5520-02\\HW\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher_jo.png"
     },
