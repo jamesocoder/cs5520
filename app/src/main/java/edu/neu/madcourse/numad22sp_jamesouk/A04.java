@@ -101,44 +101,21 @@ public class A04 extends AppCompatActivity {
         rview = findViewById(R.id.rView);
         rview.setHasFixedSize(true);
         adapter = new A04Adapter(itemList);
-        // TODO: LEFT OFF ADAPTING THIS CODE AND BELOW
-        ItemClickListener itemClickListener = new ItemClickListener() {
+        A04Card itemClickListener = new A04Card() {
             @Override
             public void onItemClick(int position) {
-                //attributions bond to the item has been changed
                 itemList.get(position).onItemClick(position);
-
-                rviewAdapter.notifyItemChanged(position);
-            }
-
-            @Override
-            public void onCheckBoxClick(int position) {
-                //attributions bond to the item has been changed
-                itemList.get(position).onCheckBoxClick(position);
-
-                rviewAdapter.notifyItemChanged(position);
+                adapter.notifyItemChanged(position);
             }
         };
-        rviewAdapter.setOnItemClickListener(itemClickListener);
-
-        recyclerView.setAdapter(rviewAdapter);
-        recyclerView.setLayoutManager(rLayoutManger);
-
-
+        adapter.setOnItemClickListener(itemClickListener);
+        rview.setAdapter(adapter);
+        rview.setLayoutManager(rLayoutMngr);
     }
 
     private void addItem(int position) {
-        itemList.add(
-                position,
-                new ItemCard(
-                        R.drawable.empty,
-                        "No Logo item",
-                        "Item id: " + Math.abs(new Random().nextInt(100000)),
-                        false
-                )
-        );
-        Toast.makeText(MainActivity.this, "Add an item", Toast.LENGTH_SHORT).show();
-
-        rviewAdapter.notifyItemInserted(position);
+        itemList.add(position, new A04Card("New Title", "New URL"));
+        // TODO: add snackbar notification for added item
+        adapter.notifyItemInserted(position);
     }
 }

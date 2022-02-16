@@ -6,9 +6,6 @@ import android.view.ViewGroup;
 import androidx.recyclerview.widget.RecyclerView;
 import java.util.ArrayList;
 
-/*
-This defines a container class that holds an array of the A04Holder/A04Card objects that we defined
- */
 public class A04Adapter extends RecyclerView.Adapter<A04Holder> {
 
     private final ArrayList<A04Card> itemList;
