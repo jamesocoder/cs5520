@@ -2095,6 +2095,7 @@ int id transition_position 0x7f080194
 int id transition_scene_layoutid_cache 0x7f080195
 int id transition_transform 0x7f080196
 int id triangle 0x7f080197
+int id txt_myInfo 0x7f0801aa
 int id txt_pressed 0x7f080198
 int id unchecked 0x7f080199
 int id uniform 0x7f08019a
@@ -2168,6 +2169,7 @@ int layout abc_search_dropdown_item_icons_2line 0x7f0b0018
 int layout abc_search_view 0x7f0b0019
 int layout abc_select_dialog_material 0x7f0b001a
 int layout abc_tooltip 0x7f0b001b
+int layout activity_a01 0x7f0b0072
 int layout activity_a03 0x7f0b001c
 int layout activity_a04 0x7f0b001d
 int layout activity_main 0x7f0b001e
@@ -2257,6 +2259,7 @@ int layout text_view_without_line_height 0x7f0b0070
 int mipmap ic_launcher_jo 0x7f0c0000
 int mipmap ic_launcher_jo_round 0x7f0c0001
 int plurals mtrl_badge_content_description 0x7f0d0000
+int string a01 0x7f0e0070
 int string a03 0x7f0e0000
 int string a04 0x7f0e006d
 int string a04Title 0x7f0e006e
@@ -2288,7 +2291,6 @@ int string abc_searchview_description_voice 0x7f0e0018
 int string abc_shareactionprovider_share_with 0x7f0e0019
 int string abc_shareactionprovider_share_with_application 0x7f0e001a
 int string abc_toolbar_collapse_description 0x7f0e001b
-int string about_me 0x7f0e001c
 int string app_name 0x7f0e001d
 int string appbar_scrolling_view_behavior 0x7f0e001e
 int string bottom_sheet_behavior 0x7f0e001f
@@ -2361,6 +2363,7 @@ int string mtrl_picker_toggle_to_calendar_input_mode 0x7f0e0061
 int string mtrl_picker_toggle_to_day_selection 0x7f0e0062
 int string mtrl_picker_toggle_to_text_input_mode 0x7f0e0063
 int string mtrl_picker_toggle_to_year_selection 0x7f0e0064
+int string my_info 0x7f0e0071
 int string password_toggle_content_description 0x7f0e0065
 int string path_password_eye 0x7f0e0066
 int string path_password_eye_mask_strike_through 0x7f0e0067

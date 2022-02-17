@@ -2,11 +2,9 @@ package edu.neu.madcourse.numad22sp_jamesouk;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -20,32 +18,27 @@ public class MainActivity extends AppCompatActivity {
         A method becomes compatible for use with a View's onClick Event when a View is the only
         parameter in its declaration.
         Source: https://developer.android.com/training/basics/firstapp/starting-activity#java
+
+        This method handles view clicking on the main activity.  It currently expects all button
+        clicks to lead to new Activities, thus it defines an Intent outside of the switch statement,
+        assigns it in the switch, and then launches it after the switch. If a button doesn't have an
+        Activity coded for it, the method will do nothing.
      */
     public void onClick(View view){
+        Intent launch;
         switch (view.getId()){
             case R.id.a01:
-                displayMe();
+                launch = new Intent(this, A01.class);
                 break;
             case R.id.a03:
-                // Open Assignment 2's Activity
-                Intent startA03 = new Intent(this, A03.class);
-                startActivity(startA03);
+                launch = new Intent(this, A03.class);
                 break;
             case R.id.a04:
-                Intent startA04 = new Intent(this, A04.class);
-                startActivity(startA04);
+                launch = new Intent(this, A04.class);
                 break;
+            default:
+                return;
         }
-    }
-
-    // Display a toast notification supplying my information
-    // Source: https://developer.android.com/guide/topics/ui/notifiers/toasts#java
-    public void displayMe() {
-        Context context = getApplicationContext();
-        CharSequence aboutMe = "James Ouk - ouk.j@northeastern.edu";
-        int duration = Toast.LENGTH_LONG;
-
-        Toast toast = Toast.makeText(context, aboutMe, duration);
-        toast.show();
+        startActivity(launch);
     }
 }

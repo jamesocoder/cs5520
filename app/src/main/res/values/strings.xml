@@ -1,7 +1,8 @@
 <resources>
     <!-- Assignment 01 -->
     <string name="app_name">NUMAD22Sp_JamesOuk</string>
-    <string name="about_me">About Me</string>
+    <string name="a01">About Me</string>
+    <string name="my_info">James Ouk - ouk.j@northeastern.edu</string>
 
     <!-- Assignment 03 -->
     <string name="a03">Clicky Clicky</string>

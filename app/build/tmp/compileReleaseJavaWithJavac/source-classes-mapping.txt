@@ -1,18 +1,20 @@
-edu/neu/madcourse/numad22sp_jamesouk/BuildConfig.java
- edu.neu.madcourse.numad22sp_jamesouk.BuildConfig
 edu/neu/madcourse/numad22sp_jamesouk/A04Card.java
  edu.neu.madcourse.numad22sp_jamesouk.A04Card
-edu/neu/madcourse/numad22sp_jamesouk/A04Adapter.java
- edu.neu.madcourse.numad22sp_jamesouk.A04Adapter
-edu/neu/madcourse/numad22sp_jamesouk/A03.java
- edu.neu.madcourse.numad22sp_jamesouk.A03
-edu/neu/madcourse/numad22sp_jamesouk/A04Holder.java
- edu.neu.madcourse.numad22sp_jamesouk.A04Holder
- edu.neu.madcourse.numad22sp_jamesouk.A04Holder$1
 edu/neu/madcourse/numad22sp_jamesouk/MainActivity.java
  edu.neu.madcourse.numad22sp_jamesouk.MainActivity
+edu/neu/madcourse/numad22sp_jamesouk/BuildConfig.java
+ edu.neu.madcourse.numad22sp_jamesouk.BuildConfig
+edu/neu/madcourse/numad22sp_jamesouk/A01.java
+ edu.neu.madcourse.numad22sp_jamesouk.A01
 edu/neu/madcourse/numad22sp_jamesouk/A04.java
  edu.neu.madcourse.numad22sp_jamesouk.A04
  edu.neu.madcourse.numad22sp_jamesouk.A04$1
  edu.neu.madcourse.numad22sp_jamesouk.A04$2
  edu.neu.madcourse.numad22sp_jamesouk.A04$3
+edu/neu/madcourse/numad22sp_jamesouk/A04Holder.java
+ edu.neu.madcourse.numad22sp_jamesouk.A04Holder
+ edu.neu.madcourse.numad22sp_jamesouk.A04Holder$1
+edu/neu/madcourse/numad22sp_jamesouk/A03.java
+ edu.neu.madcourse.numad22sp_jamesouk.A03
+edu/neu/madcourse/numad22sp_jamesouk/A04Adapter.java
+ edu.neu.madcourse.numad22sp_jamesouk.A04Adapter

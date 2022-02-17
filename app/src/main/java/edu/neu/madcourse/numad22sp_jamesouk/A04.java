@@ -50,7 +50,7 @@ public class A04 extends AppCompatActivity {
                 switch (direction) {
                     case ItemTouchHelper.LEFT:
                         // TODO: Add Snackbar for delete
-                        Toast.makeText(getApplicationContext(), "Left", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(getApplicationContext(), "left", Toast.LENGTH_SHORT).show();
                         int pos = rHldr.getLayoutPosition();
                         itemList.remove(pos);
                         adapter.notifyItemRemoved(pos);
@@ -58,7 +58,7 @@ public class A04 extends AppCompatActivity {
                     case ItemTouchHelper.RIGHT:
                         // TODO: Add edit function
                         // BUG: Both right and left swipes are leading to card deletion.  This switch is doing nothing?
-                        Toast.makeText(getApplicationContext(), "Right", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(getApplicationContext(), "right", Toast.LENGTH_SHORT).show();
                         break;
                 }
             }
