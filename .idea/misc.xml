@@ -3,6 +3,9 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/james/OneDrive/Documents/NEU_2022S_CS5520-02/HW/app/src/main/res/layout/a04_activity_add.xml" value="0.5234375" />
+        <entry key="..\:/Users/james/OneDrive/Documents/NEU_2022S_CS5520-02/HW/app/src/main/res/layout/a04_activity_main.xml" value="0.5234375" />
+        <entry key="..\:/Users/james/OneDrive/Documents/NEU_2022S_CS5520-02/HW/app/src/main/res/layout/a04_layout_item.xml" value="0.5234375" />
         <entry key="..\:/Users/james/OneDrive/Documents/NEU_2022S_CS5520-02/HW/app/src/main/res/layout/activity_a01.xml" value="0.5270833333333333" />
         <entry key="..\:/Users/james/OneDrive/Documents/NEU_2022S_CS5520-02/HW/app/src/main/res/layout/activity_a02.xml" value="0.4783950617283951" />
         <entry key="..\:/Users/james/OneDrive/Documents/NEU_2022S_CS5520-02/HW/app/src/main/res/layout/activity_a03.xml" value="0.32882882882882886" />
@@ -10,7 +13,7 @@
         <entry key="..\:/Users/james/OneDrive/Documents/NEU_2022S_CS5520-02/HW/app/src/main/res/layout/activity_act_a02.xml" value="0.4783950617283951" />
         <entry key="..\:/Users/james/OneDrive/Documents/NEU_2022S_CS5520-02/HW/app/src/main/res/layout/activity_main.xml" value="0.6" />
         <entry key="..\:/Users/james/OneDrive/Documents/NEU_2022S_CS5520-02/HW/app/src/main/res/layout/activity_test01.xml" value="0.47239583333333335" />
-        <entry key="..\:/Users/james/OneDrive/Documents/NEU_2022S_CS5520-02/HW/app/src/main/res/layout/card_a04.xml" value="0.72" />
+        <entry key="..\:/Users/james/OneDrive/Documents/NEU_2022S_CS5520-02/HW/app/src/main/res/layout/card_a04.xml" value="0.4" />
         <entry key="..\:/Users/james/OneDrive/Documents/NEU_2022S_CS5520-02/HW/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.58125" />
         <entry key="..\:/Users/james/OneDrive/Documents/NEU_2022S_CS5520-02/HW/app/src/main/res/mipmap-anydpi-v26/ic_launcher_jo.xml" value="0.58125" />
       </map>

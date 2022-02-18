@@ -34,7 +34,7 @@ public class MainActivity extends AppCompatActivity {
                 launch = new Intent(this, A03.class);
                 break;
             case R.id.a04:
-                launch = new Intent(this, A04.class);
+                launch = new Intent(this, A04Main.class);
                 break;
             default:
                 return;

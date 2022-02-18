@@ -9,16 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_jo_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.NUMAD22Sp_JamesOuk">
-        <activity
-            android:name=".A01"
-            android:exported="false" />
-        <activity
-            android:name=".A04"
-            android:exported="false"
-            android:theme="@style/Theme.NUMAD22Sp_JamesOuk.NoActionBar" />
-        <activity
-            android:name=".A03"
-            android:exported="false" />
+
         <activity
             android:name=".MainActivity"
             android:exported="true">
@@ -28,6 +19,22 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-    </application>
 
+        <activity
+            android:name=".A01"
+            android:exported="false" />
+
+        <activity
+            android:name=".A03"
+            android:exported="false" />
+
+        <activity
+            android:name=".A04Main"
+            android:exported="false"
+            android:theme="@style/Theme.NUMAD22Sp_JamesOuk.NoActionBar" />
+        <activity
+            android:name=".A04Add"
+            android:exported="false" />
+
+    </application>
 </manifest>

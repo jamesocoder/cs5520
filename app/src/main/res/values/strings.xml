@@ -1,21 +1,24 @@
 <resources>
-    <!-- Assignment 01 -->
     <string name="app_name">NUMAD22Sp_JamesOuk</string>
-    <string name="a01">About Me</string>
-    <string name="my_info">James Ouk - ouk.j@northeastern.edu</string>
+
+    <!-- Assignment 01 -->
+    <string name="a01_main_btn">About Me</string>
+    <string name="a01_my_info">James Ouk - ouk.j@northeastern.edu</string>
 
     <!-- Assignment 03 -->
     <string name="a03">Clicky Clicky</string>
-    <string name="btn_a">A</string>
-    <string name="btn_b">B</string>
-    <string name="btn_c">C</string>
-    <string name="btn_d">D</string>
-    <string name="btn_e">E</string>
-    <string name="btn_f">F</string>
-    <string name="txt_pressed">Pressed: -</string>
+    <string name="a03_a">A</string>
+    <string name="a03_b">B</string>
+    <string name="a03_c">C</string>
+    <string name="a03_d">D</string>
+    <string name="a03_e">E</string>
+    <string name="a03_f">F</string>
+    <string name="a03_pressed">Pressed: -</string>
 
     <!-- Assignment 04 -->
     <string name="a04">Link Collector</string>
-    <string name="a04Title">Title</string>
-    <string name="a04Url">URL</string>
+    <string name="a04_title">Title</string>
+    <string name="a04_url">URL</string>
+    <string name="a04_cancel">Cancel</string>
+    <string name="a04_add">Add</string>
 </resources>

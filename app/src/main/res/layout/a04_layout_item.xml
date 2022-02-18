@@ -7,9 +7,11 @@ of each card-->
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_margin="2dp"
-    app:cardCornerRadius="5dp">
+    app:cardCornerRadius="5dp"
+    app:cardBackgroundColor="@color/night_secondary_dark">
 
     <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/card_constraint_layout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_margin="5dp">
@@ -18,8 +20,8 @@ of each card-->
             android:id="@+id/card_title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/a04Title"
-            android:textColor="@android:color/black"
+            android:text="Example Title"
+            android:textColor="@android:color/white"
             android:textSize="28sp"
             android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="@+id/card_url"
@@ -33,7 +35,7 @@ of each card-->
             android:id="@+id/card_url"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/a04Url"
+            android:text="www.example.com"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/card_title"
             app:layout_constraintStart_toStartOf="parent"

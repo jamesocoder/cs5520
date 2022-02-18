@@ -19,13 +19,6 @@
         android:testOnly="true"
         android:theme="@style/Theme.NUMAD22Sp_JamesOuk" >
         <activity
-            android:name="edu.neu.madcourse.numad22sp_jamesouk.A04"
-            android:exported="false"
-            android:theme="@style/Theme.NUMAD22Sp_JamesOuk.NoActionBar" />
-        <activity
-            android:name="edu.neu.madcourse.numad22sp_jamesouk.A03"
-            android:exported="false" />
-        <activity
             android:name="edu.neu.madcourse.numad22sp_jamesouk.MainActivity"
             android:exported="true" >
             <intent-filter>
@@ -34,6 +27,19 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name="edu.neu.madcourse.numad22sp_jamesouk.A01"
+            android:exported="false" />
+        <activity
+            android:name="edu.neu.madcourse.numad22sp_jamesouk.A03"
+            android:exported="false" />
+        <activity
+            android:name="edu.neu.madcourse.numad22sp_jamesouk.A04Main"
+            android:exported="false"
+            android:theme="@style/Theme.NUMAD22Sp_JamesOuk.NoActionBar" />
+        <activity
+            android:name="edu.neu.madcourse.numad22sp_jamesouk.A04Add"
+            android:exported="false" />
     </application>
 
 </manifest>

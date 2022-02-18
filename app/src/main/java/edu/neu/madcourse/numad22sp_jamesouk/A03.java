@@ -12,7 +12,7 @@ public class A03 extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_a03);
+        setContentView(R.layout.a03_activity);
     }
 
     /*
@@ -29,7 +29,7 @@ public class A03 extends AppCompatActivity {
             value from the resources. (Will need to think of way to determine locality to pull the
             correct String later).
          */
-        String str = getString(R.string.txt_pressed);
+        String str = getString(R.string.a03_pressed);
         pressed.setText(
                 str.replace(
                         "-",

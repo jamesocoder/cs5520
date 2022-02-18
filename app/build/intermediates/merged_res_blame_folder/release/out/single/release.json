@@ -8,6 +8,14 @@
         "source": "C:\\Users\\james\\OneDrive\\Documents\\NEU_2022S_CS5520-02\\HW\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher_jo_round.xml"
     },
     {
+        "merged": "C:\\Users\\james\\OneDrive\\Documents\\NEU_2022S_CS5520-02\\HW\\app\\build\\intermediates\\merged_res\\release\\layout_a04_layout_item.xml.flat",
+        "source": "C:\\Users\\james\\OneDrive\\Documents\\NEU_2022S_CS5520-02\\HW\\app\\src\\main\\res\\layout\\a04_layout_item.xml"
+    },
+    {
+        "merged": "C:\\Users\\james\\OneDrive\\Documents\\NEU_2022S_CS5520-02\\HW\\app\\build\\intermediates\\merged_res\\release\\layout_a03_activity.xml.flat",
+        "source": "C:\\Users\\james\\OneDrive\\Documents\\NEU_2022S_CS5520-02\\HW\\app\\src\\main\\res\\layout\\a03_activity.xml"
+    },
+    {
         "merged": "C:\\Users\\james\\OneDrive\\Documents\\NEU_2022S_CS5520-02\\HW\\app\\build\\intermediates\\merged_res\\release\\mipmap-mdpi_ic_launcher_jo_round.png.flat",
         "source": "C:\\Users\\james\\OneDrive\\Documents\\NEU_2022S_CS5520-02\\HW\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher_jo_round.png"
     },
@@ -16,8 +24,8 @@
         "source": "C:\\Users\\james\\OneDrive\\Documents\\NEU_2022S_CS5520-02\\HW\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher_jo.xml"
     },
     {
-        "merged": "C:\\Users\\james\\OneDrive\\Documents\\NEU_2022S_CS5520-02\\HW\\app\\build\\intermediates\\merged_res\\release\\layout_activity_a03.xml.flat",
-        "source": "C:\\Users\\james\\OneDrive\\Documents\\NEU_2022S_CS5520-02\\HW\\app\\src\\main\\res\\layout\\activity_a03.xml"
+        "merged": "C:\\Users\\james\\OneDrive\\Documents\\NEU_2022S_CS5520-02\\HW\\app\\build\\intermediates\\merged_res\\release\\layout_a04_activity_add.xml.flat",
+        "source": "C:\\Users\\james\\OneDrive\\Documents\\NEU_2022S_CS5520-02\\HW\\app\\src\\main\\res\\layout\\a04_activity_add.xml"
     },
     {
         "merged": "C:\\Users\\james\\OneDrive\\Documents\\NEU_2022S_CS5520-02\\HW\\app\\build\\intermediates\\merged_res\\release\\mipmap-hdpi_ic_launcher_jo.png.flat",
@@ -26,10 +34,6 @@
     {
         "merged": "C:\\Users\\james\\OneDrive\\Documents\\NEU_2022S_CS5520-02\\HW\\app\\build\\intermediates\\merged_res\\release\\mipmap-hdpi_ic_launcher_jo_round.png.flat",
         "source": "C:\\Users\\james\\OneDrive\\Documents\\NEU_2022S_CS5520-02\\HW\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher_jo_round.png"
-    },
-    {
-        "merged": "C:\\Users\\james\\OneDrive\\Documents\\NEU_2022S_CS5520-02\\HW\\app\\build\\intermediates\\merged_res\\release\\layout_card_a04.xml.flat",
-        "source": "C:\\Users\\james\\OneDrive\\Documents\\NEU_2022S_CS5520-02\\HW\\app\\src\\main\\res\\layout\\card_a04.xml"
     },
     {
         "merged": "C:\\Users\\james\\OneDrive\\Documents\\NEU_2022S_CS5520-02\\HW\\app\\build\\intermediates\\merged_res\\release\\mipmap-xhdpi_ic_launcher_jo.png.flat",
@@ -44,20 +48,16 @@
         "source": "C:\\Users\\james\\OneDrive\\Documents\\NEU_2022S_CS5520-02\\HW\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher_jo_round.png"
     },
     {
+        "merged": "C:\\Users\\james\\OneDrive\\Documents\\NEU_2022S_CS5520-02\\HW\\app\\build\\intermediates\\merged_res\\release\\layout_a04_activity_main.xml.flat",
+        "source": "C:\\Users\\james\\OneDrive\\Documents\\NEU_2022S_CS5520-02\\HW\\app\\src\\main\\res\\layout\\a04_activity_main.xml"
+    },
+    {
         "merged": "C:\\Users\\james\\OneDrive\\Documents\\NEU_2022S_CS5520-02\\HW\\app\\build\\intermediates\\merged_res\\release\\mipmap-xhdpi_ic_launcher_jo_round.png.flat",
         "source": "C:\\Users\\james\\OneDrive\\Documents\\NEU_2022S_CS5520-02\\HW\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher_jo_round.png"
     },
     {
-        "merged": "C:\\Users\\james\\OneDrive\\Documents\\NEU_2022S_CS5520-02\\HW\\app\\build\\intermediates\\merged_res\\release\\layout_activity_a01.xml.flat",
-        "source": "C:\\Users\\james\\OneDrive\\Documents\\NEU_2022S_CS5520-02\\HW\\app\\src\\main\\res\\layout\\activity_a01.xml"
-    },
-    {
         "merged": "C:\\Users\\james\\OneDrive\\Documents\\NEU_2022S_CS5520-02\\HW\\app\\build\\intermediates\\merged_res\\release\\mipmap-xxxhdpi_ic_launcher_jo.png.flat",
         "source": "C:\\Users\\james\\OneDrive\\Documents\\NEU_2022S_CS5520-02\\HW\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher_jo.png"
-    },
-    {
-        "merged": "C:\\Users\\james\\OneDrive\\Documents\\NEU_2022S_CS5520-02\\HW\\app\\build\\intermediates\\merged_res\\release\\layout_activity_a04.xml.flat",
-        "source": "C:\\Users\\james\\OneDrive\\Documents\\NEU_2022S_CS5520-02\\HW\\app\\src\\main\\res\\layout\\activity_a04.xml"
     },
     {
         "merged": "C:\\Users\\james\\OneDrive\\Documents\\NEU_2022S_CS5520-02\\HW\\app\\build\\intermediates\\merged_res\\release\\drawable_ic_launcher_jo_foreground.xml.flat",
@@ -66,6 +66,10 @@
     {
         "merged": "C:\\Users\\james\\OneDrive\\Documents\\NEU_2022S_CS5520-02\\HW\\app\\build\\intermediates\\merged_res\\release\\mipmap-xxhdpi_ic_launcher_jo_round.png.flat",
         "source": "C:\\Users\\james\\OneDrive\\Documents\\NEU_2022S_CS5520-02\\HW\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_jo_round.png"
+    },
+    {
+        "merged": "C:\\Users\\james\\OneDrive\\Documents\\NEU_2022S_CS5520-02\\HW\\app\\build\\intermediates\\merged_res\\release\\layout_a01_activity.xml.flat",
+        "source": "C:\\Users\\james\\OneDrive\\Documents\\NEU_2022S_CS5520-02\\HW\\app\\src\\main\\res\\layout\\a01_activity.xml"
     },
     {
         "merged": "C:\\Users\\james\\OneDrive\\Documents\\NEU_2022S_CS5520-02\\HW\\app\\build\\intermediates\\merged_res\\release\\drawable_ic_launcher_jo_background.xml.flat",
