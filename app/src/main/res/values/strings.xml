@@ -23,12 +23,16 @@
     <string name="a04_add">Add</string>
 
     <!-- Assignment 05 -->
+    <string name="a05">My Coordinates</string>
     <string name="a05_rationale">
         <ul>
-            <li>Reads the device\'s last known location once whenever <b>[Display Location]</b> is tapped.</li>
+            <li>Reads the device\'s last known location once whenever <b>[Display Coordinates]</b> is tapped.</li>
         </ul>
     </string>
+    <string name="a05_btn_txt">Display Coordinates</string>
+    <string name="a05_denied"><b>[Display Cooridnates]</b> is disabled until you give permission to read your location data.</string>
     <string name="a05_required">This feature requires permission to read your location data.</string>
     <string name="a05_ok">Grant Permission</string>
-    <string name="a05_denied"><b>[Display Location]</b> is disabled until you give permission to read your location data.</string>
+    <string name="a05_latitude">Latitude:</string>
+    <string name="a05_longitude">Longitude:</string>
 </resources>

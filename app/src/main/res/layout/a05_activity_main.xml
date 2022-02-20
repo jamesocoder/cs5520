@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".A05Main">
+
+    <TextView
+        android:id="@+id/a05_lbl_latitude"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/a05_latitude"
+        android:textStyle="bold"
+        android:textSize="32sp"
+        app:layout_constraintTop_toTopOf="@id/a05_txt_latitude"
+        app:layout_constraintEnd_toEndOf="@id/a05_lbl_longitude" />
+
+    <TextView
+        android:id="@+id/a05_lbl_longitude"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/a05_longitude"
+        android:textStyle="bold"
+        android:textSize="32sp"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="16dp"
+        app:layout_constraintTop_toTopOf="@id/a05_txt_longitude" />
+
+    <TextView
+        android:id="@+id/a05_txt_latitude"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textSize="26sp"
+        android:text="Test"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="@id/a05_txt_longitude"
+        app:layout_constraintBottom_toTopOf="@id/a05_txt_longitude"
+        android:layout_marginBottom="20dp"/>
+
+    <TextView
+        android:id="@+id/a05_txt_longitude"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:textSize="26sp"
+        android:text="Test"
+        app:layout_constraintStart_toEndOf="@id/a05_lbl_longitude"
+        app:layout_constraintEnd_toEndOf="@id/a05_txt_latitude"
+        app:layout_constraintTop_toBottomOf="@id/a05_txt_latitude"
+        android:layout_marginTop="20dp"/>
+
+    <Button
+        android:id="@+id/a05_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="32dp"
+        android:text="@string/a05_btn_txt"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
