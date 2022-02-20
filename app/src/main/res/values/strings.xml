@@ -30,7 +30,7 @@
         </ul>
     </string>
     <string name="a05_btn_txt">Display Coordinates</string>
-    <string name="a05_denied"><b>[Display Cooridnates]</b> is disabled until you give permission to read your location data.</string>
+    <string name="a05_denied"><b>[Display Coordinates]</b> is disabled until you give permission to read your location data.</string>
     <string name="a05_required">This feature requires permission to read your location data.</string>
     <string name="a05_ok">Grant Permission</string>
     <string name="a05_latitude">Latitude:</string>
