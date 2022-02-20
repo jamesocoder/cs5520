@@ -12,14 +12,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.NUMAD22Sp_JamesOuk">
         <activity
-            android:name=".A05Main"
-            android:exported="false" />
-        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
@@ -35,6 +31,9 @@
             android:theme="@style/Theme.NUMAD22Sp_JamesOuk.NoActionBar" />
         <activity
             android:name=".A04Add"
+            android:exported="false" />
+        <activity
+            android:name=".A05Main"
             android:exported="false" />
         <activity
             android:name=".A05Rationale"
