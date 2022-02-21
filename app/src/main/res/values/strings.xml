@@ -36,4 +36,5 @@
     <string name="a05_latitude">Latitude:</string>
     <string name="a05_longitude">Longitude:</string>
     <string name="a05_timeout">Location request timed out.  Could not determine location within reasonable time.</string>
+    <string name="a05_locationOff"><b>[Display Coordinates]</b> will not work unless you turn on Location services.</string>
 </resources>
