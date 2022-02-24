@@ -30,6 +30,16 @@
         app:layout_constraintTop_toTopOf="@id/a05_txt_longitude" />
 
     <TextView
+        android:id="@+id/a05_lbl_timestamp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/a05_time"
+        android:textStyle="bold"
+        android:textSize="32sp"
+        app:layout_constraintEnd_toEndOf="@id/a05_lbl_longitude"
+        app:layout_constraintTop_toTopOf="@id/a05_txt_timestamp"/>
+
+    <TextView
         android:id="@+id/a05_txt_latitude"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
@@ -52,6 +62,16 @@
         app:layout_constraintEnd_toEndOf="@id/a05_txt_latitude"
         app:layout_constraintTop_toBottomOf="@id/a05_txt_latitude"
         android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:id="@+id/a05_txt_timestamp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textSize="26sp"
+        app:layout_constraintEnd_toEndOf="@id/a05_txt_latitude"
+        app:layout_constraintStart_toStartOf="@id/a05_txt_longitude"
+        app:layout_constraintTop_toBottomOf="@id/a05_txt_longitude"
+        android:layout_marginTop="20dp" />
 
     <Button
         android:id="@+id/a05_btn"

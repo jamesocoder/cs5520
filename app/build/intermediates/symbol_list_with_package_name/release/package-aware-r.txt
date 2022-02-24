@@ -1761,8 +1761,10 @@ id a05_btn
 id a05_layout
 id a05_lbl_latitude
 id a05_lbl_longitude
+id a05_lbl_timestamp
 id a05_txt_latitude
 id a05_txt_longitude
+id a05_txt_timestamp
 id accelerate
 id accessibility_action_clickable_span
 id accessibility_custom_action_0
@@ -2378,6 +2380,7 @@ string a05_longitude
 string a05_ok
 string a05_rationale
 string a05_required
+string a05_time
 string a05_timeout
 string abc_action_bar_home_description
 string abc_action_bar_up_description

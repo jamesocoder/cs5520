@@ -13,6 +13,7 @@ import android.app.Activity;
 import android.content.pm.PackageManager;
 import android.location.Location;
 import android.os.Bundle;
+import android.os.Looper;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
@@ -20,7 +21,9 @@ import android.widget.TextView;
 
 import com.google.android.gms.common.api.ResolvableApiException;
 import com.google.android.gms.location.FusedLocationProviderClient;
+import com.google.android.gms.location.LocationCallback;
 import com.google.android.gms.location.LocationRequest;
+import com.google.android.gms.location.LocationResult;
 import com.google.android.gms.location.LocationServices;
 import com.google.android.gms.location.LocationSettingsRequest;
 import com.google.android.gms.location.LocationSettingsResponse;
@@ -30,6 +33,8 @@ import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.gms.tasks.Task;
 import com.google.android.material.snackbar.Snackbar;
 
+import java.util.Date;
+
 public class A05Main extends AppCompatActivity {
 
     // A Google Play service that polls location data
@@ -38,7 +43,16 @@ public class A05Main extends AppCompatActivity {
     private final int LOC_PRIORITY = LocationRequest.PRIORITY_LOW_POWER;
     // The level of permission this app will use for Location data
     private final String myPermission = Manifest.permission.ACCESS_COARSE_LOCATION;
+    // For tagging the Log's output for an easier finding of debug notes
     private final String APP_TAG = "MY_LOCATION";
+    // For determining if the user is requesting location updates.  Stored whenever the App is destroyed
+    // Could be implemented with a UI switch, but set to true just for easy location demonstration purposes
+    private final String REQUESTING_LOCATION_UPDATES = "LOC_UPDATES";
+    private Boolean requestingLocationUpdates = true;
+    // Contains the type of location updates we are requesting
+    private LocationRequest locationRequest;
+    // An object containing the code to handle the list of Locations returned by requestLocationUpdates()
+    private LocationCallback locationCallback;
 
     /* This androidx handler for launching an Activity and monitoring for a result is used when the
        App checks the system settings to see if the Location service is enabled.  If not, it launches
@@ -82,6 +96,27 @@ public class A05Main extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.a05_activity_main);
 
+        fusedLocationClient = LocationServices.getFusedLocationProviderClient(this);
+
+        // Create a LocationRequest object that represents how often and how precise this App wants
+        // location data to be
+        locationRequest = LocationRequest.create();
+        locationRequest.setInterval(30000);
+        locationRequest.setPriority(LOC_PRIORITY);
+
+        locationCallback = new LocationCallback() {
+            @Override
+            public void onLocationResult(@NonNull LocationResult locationResult) {
+                super.onLocationResult(locationResult);
+                if (locationResult == null) { return; }
+                for (Location location : locationResult.getLocations()) {
+                    // Manipulate each location in the Location list
+                    Log.d(APP_TAG, "Location Updated");
+                    setCoordinates(location);
+                }
+            }
+        };
+
         // The button on a05_activity_main
         Button go = findViewById(R.id.a05_btn);
         go.setOnClickListener(new View.OnClickListener() {
@@ -96,15 +131,9 @@ public class A05Main extends AppCompatActivity {
     // This method launches a dialogue if the device's location service is off (i.e. an Android user
     // has turned of GPS/Location services in System Settings)
     private void confirmLocationServiceOn(){
-        // Create a LocationRequest object that represents how often and how precise this App wants
-        // location data to be
-        LocationRequest locReq = LocationRequest.create();
-        locReq.setInterval(30000);
-        locReq.setPriority(LOC_PRIORITY);
-
         // Access the Settings Client and return a Task with the Location Settings in it
         LocationSettingsRequest.Builder builder =
-                new LocationSettingsRequest.Builder().addLocationRequest(locReq);
+                new LocationSettingsRequest.Builder().addLocationRequest(locationRequest);
         SettingsClient client = LocationServices.getSettingsClient(A05Main.this);
         Task<LocationSettingsResponse> task = client.checkLocationSettings(builder.build());
 
@@ -170,7 +199,6 @@ public class A05Main extends AppCompatActivity {
     // Uses the Google Play service's Fused Location Provider to access Location data first using
     // the most efficient method: .getLastLocation()
     private void getPriorCoordinates() {
-        fusedLocationClient = LocationServices.getFusedLocationProviderClient(this);
         fusedLocationClient.getLastLocation()
                 .addOnSuccessListener(this, new OnSuccessListener<Location>() {
                     @Override
@@ -185,7 +213,7 @@ public class A05Main extends AppCompatActivity {
                         if (location != null) {
                             //Log.d("Last Location Success", location.toString());
                             // Location data successfully pulled.  Display it on this Activity's TextViews
-                            setCoordinates(location.getLatitude(), location.getLongitude());
+                            setCoordinates(location);
                         } else {
                             // Prior location data does not exist, attempt to pull Current data
                             getCurrentCoordinates(fusedLocationClient);
@@ -202,7 +230,7 @@ public class A05Main extends AppCompatActivity {
                     public void onSuccess(Location location) {
                         if (location != null) {
                             //Log.d("Current Location Success", location.toString());
-                            setCoordinates(location.getLatitude(), location.getLongitude());
+                            setCoordinates(location);
                         } else {
                             /* .getCurrentLocation() will return a null Location object if the device
                                is unable to determine its location within tens of seconds.  Tell the
@@ -214,10 +242,36 @@ public class A05Main extends AppCompatActivity {
                 });
     }
 
-    private void setCoordinates(double latitude, double longitude) {
+    private void setCoordinates(Location location) {
         TextView tView = findViewById(R.id.a05_txt_latitude);
-        tView.setText(String.valueOf(latitude));
+        tView.setText(String.valueOf(location.getLatitude()));
         tView = findViewById(R.id.a05_txt_longitude);
-        tView.setText(String.valueOf(longitude));
+        tView.setText(String.valueOf(location.getLongitude()));
+        tView = findViewById(R.id.a05_txt_timestamp);
+        Date date = new Date(location.getTime());
+        tView.setText(date.toString());
     }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        if(requestingLocationUpdates) { startLocationUpdates(); }
+    }
+
+    @SuppressLint("MissingPermission")
+    private void startLocationUpdates() {
+        fusedLocationClient.requestLocationUpdates(
+                locationRequest,
+                locationCallback,
+                Looper.getMainLooper()
+        );
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        stopLocationUpdates();
+    }
+
+    private void stopLocationUpdates() { fusedLocationClient.removeLocationUpdates(locationCallback); }
 }
