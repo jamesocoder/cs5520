@@ -1765,6 +1765,7 @@ id a05_lbl_timestamp
 id a05_txt_latitude
 id a05_txt_longitude
 id a05_txt_timestamp
+id a06
 id accelerate
 id accessibility_action_clickable_span
 id accessibility_custom_action_0
@@ -2130,6 +2131,7 @@ id stop
 id stretch
 id submenuarrow
 id submit_area
+id t1
 id tabMode
 id tag_accessibility_actions
 id tag_accessibility_clickable_spans
@@ -2240,6 +2242,7 @@ layout a04_activity_main
 layout a04_layout_item
 layout a05_activity_main
 layout a05_activity_rationale
+layout a06_activity_main
 layout abc_action_bar_title_item
 layout abc_action_bar_up_container
 layout abc_action_menu_item_layout
@@ -2382,6 +2385,7 @@ string a05_rationale
 string a05_required
 string a05_time
 string a05_timeout
+string a06
 string abc_action_bar_home_description
 string abc_action_bar_up_description
 string abc_action_menu_overflow_description

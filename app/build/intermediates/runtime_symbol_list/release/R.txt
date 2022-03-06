@@ -1764,6 +1764,7 @@ int id a05_lbl_timestamp 0x7f080018
 int id a05_txt_latitude 0x7f080019
 int id a05_txt_longitude 0x7f08001a
 int id a05_txt_timestamp 0x7f08001b
+int id a06 0x7f0801cf
 int id accelerate 0x7f08001c
 int id accessibility_action_clickable_span 0x7f08001d
 int id accessibility_custom_action_0 0x7f08001e
@@ -2129,6 +2130,7 @@ int id stop 0x7f080185
 int id stretch 0x7f080186
 int id submenuarrow 0x7f080187
 int id submit_area 0x7f080188
+int id t1 0x7f0801d0
 int id tabMode 0x7f080189
 int id tag_accessibility_actions 0x7f08018a
 int id tag_accessibility_clickable_spans 0x7f08018b
@@ -2239,6 +2241,7 @@ int layout a04_activity_main 0x7f0b0003
 int layout a04_layout_item 0x7f0b0004
 int layout a05_activity_main 0x7f0b0005
 int layout a05_activity_rationale 0x7f0b0006
+int layout a06_activity_main 0x7f0b0076
 int layout abc_action_bar_title_item 0x7f0b0007
 int layout abc_action_bar_up_container 0x7f0b0008
 int layout abc_action_menu_item_layout 0x7f0b0009
@@ -2381,6 +2384,7 @@ int string a05_rationale 0x7f0f0016
 int string a05_required 0x7f0f0017
 int string a05_time 0x7f0f0018
 int string a05_timeout 0x7f0f0019
+int string a06 0x7f0f0090
 int string abc_action_bar_home_description 0x7f0f001a
 int string abc_action_bar_up_description 0x7f0f001b
 int string abc_action_menu_overflow_description 0x7f0f001c

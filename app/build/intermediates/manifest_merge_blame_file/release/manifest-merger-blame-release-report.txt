@@ -13,111 +13,120 @@
 11    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
 11-->C:\Users\james\OneDrive\Documents\NEU_2022S_CS5520-02\HW\app\src\main\AndroidManifest.xml:5:5-81
 11-->C:\Users\james\OneDrive\Documents\NEU_2022S_CS5520-02\HW\app\src\main\AndroidManifest.xml:5:22-78
-12
-13    <application
-13-->C:\Users\james\OneDrive\Documents\NEU_2022S_CS5520-02\HW\app\src\main\AndroidManifest.xml:7:5-49:19
-14        android:allowBackup="true"
-14-->C:\Users\james\OneDrive\Documents\NEU_2022S_CS5520-02\HW\app\src\main\AndroidManifest.xml:8:9-35
-15        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-15-->[androidx.core:core:1.7.0] C:\Users\james\.gradle\caches\transforms-3\d79cd730aff89e16bbe6bbee05f6ceb1\transformed\core-1.7.0\AndroidManifest.xml:24:18-86
-16        android:extractNativeLibs="false"
-17        android:icon="@mipmap/ic_launcher_jo"
-17-->C:\Users\james\OneDrive\Documents\NEU_2022S_CS5520-02\HW\app\src\main\AndroidManifest.xml:9:9-46
-18        android:label="@string/app_name"
-18-->C:\Users\james\OneDrive\Documents\NEU_2022S_CS5520-02\HW\app\src\main\AndroidManifest.xml:10:9-41
-19        android:roundIcon="@mipmap/ic_launcher_jo_round"
-19-->C:\Users\james\OneDrive\Documents\NEU_2022S_CS5520-02\HW\app\src\main\AndroidManifest.xml:11:9-57
-20        android:supportsRtl="true"
-20-->C:\Users\james\OneDrive\Documents\NEU_2022S_CS5520-02\HW\app\src\main\AndroidManifest.xml:12:9-35
-21        android:testOnly="true"
-22        android:theme="@style/Theme.NUMAD22Sp_JamesOuk" >
-22-->C:\Users\james\OneDrive\Documents\NEU_2022S_CS5520-02\HW\app\src\main\AndroidManifest.xml:13:9-56
-23        <activity
-23-->C:\Users\james\OneDrive\Documents\NEU_2022S_CS5520-02\HW\app\src\main\AndroidManifest.xml:14:9-21:20
-24            android:name="edu.neu.madcourse.numad22sp_jamesouk.MainActivity"
-24-->C:\Users\james\OneDrive\Documents\NEU_2022S_CS5520-02\HW\app\src\main\AndroidManifest.xml:15:13-41
-25            android:exported="true" >
-25-->C:\Users\james\OneDrive\Documents\NEU_2022S_CS5520-02\HW\app\src\main\AndroidManifest.xml:16:13-36
-26            <intent-filter>
-26-->C:\Users\james\OneDrive\Documents\NEU_2022S_CS5520-02\HW\app\src\main\AndroidManifest.xml:17:13-20:29
-27                <action android:name="android.intent.action.MAIN" />
-27-->C:\Users\james\OneDrive\Documents\NEU_2022S_CS5520-02\HW\app\src\main\AndroidManifest.xml:18:17-69
-27-->C:\Users\james\OneDrive\Documents\NEU_2022S_CS5520-02\HW\app\src\main\AndroidManifest.xml:18:25-66
-28
-29                <category android:name="android.intent.category.LAUNCHER" />
-29-->C:\Users\james\OneDrive\Documents\NEU_2022S_CS5520-02\HW\app\src\main\AndroidManifest.xml:19:17-77
-29-->C:\Users\james\OneDrive\Documents\NEU_2022S_CS5520-02\HW\app\src\main\AndroidManifest.xml:19:27-74
-30            </intent-filter>
-31        </activity>
-32        <activity
-32-->C:\Users\james\OneDrive\Documents\NEU_2022S_CS5520-02\HW\app\src\main\AndroidManifest.xml:22:9-24:40
-33            android:name="edu.neu.madcourse.numad22sp_jamesouk.A01"
-33-->C:\Users\james\OneDrive\Documents\NEU_2022S_CS5520-02\HW\app\src\main\AndroidManifest.xml:23:13-32
-34            android:exported="false" />
-34-->C:\Users\james\OneDrive\Documents\NEU_2022S_CS5520-02\HW\app\src\main\AndroidManifest.xml:24:13-37
-35        <activity
-35-->C:\Users\james\OneDrive\Documents\NEU_2022S_CS5520-02\HW\app\src\main\AndroidManifest.xml:25:9-27:40
-36            android:name="edu.neu.madcourse.numad22sp_jamesouk.A03"
-36-->C:\Users\james\OneDrive\Documents\NEU_2022S_CS5520-02\HW\app\src\main\AndroidManifest.xml:26:13-32
-37            android:exported="false" />
-37-->C:\Users\james\OneDrive\Documents\NEU_2022S_CS5520-02\HW\app\src\main\AndroidManifest.xml:27:13-37
-38        <activity
-38-->C:\Users\james\OneDrive\Documents\NEU_2022S_CS5520-02\HW\app\src\main\AndroidManifest.xml:28:9-31:75
-39            android:name="edu.neu.madcourse.numad22sp_jamesouk.A04Main"
-39-->C:\Users\james\OneDrive\Documents\NEU_2022S_CS5520-02\HW\app\src\main\AndroidManifest.xml:29:13-36
-40            android:exported="false"
-40-->C:\Users\james\OneDrive\Documents\NEU_2022S_CS5520-02\HW\app\src\main\AndroidManifest.xml:30:13-37
-41            android:theme="@style/Theme.NUMAD22Sp_JamesOuk.NoActionBar" />
-41-->C:\Users\james\OneDrive\Documents\NEU_2022S_CS5520-02\HW\app\src\main\AndroidManifest.xml:31:13-72
-42        <activity
-42-->C:\Users\james\OneDrive\Documents\NEU_2022S_CS5520-02\HW\app\src\main\AndroidManifest.xml:32:9-34:40
-43            android:name="edu.neu.madcourse.numad22sp_jamesouk.A04Add"
-43-->C:\Users\james\OneDrive\Documents\NEU_2022S_CS5520-02\HW\app\src\main\AndroidManifest.xml:33:13-35
-44            android:exported="false" />
-44-->C:\Users\james\OneDrive\Documents\NEU_2022S_CS5520-02\HW\app\src\main\AndroidManifest.xml:34:13-37
-45        <activity
-45-->C:\Users\james\OneDrive\Documents\NEU_2022S_CS5520-02\HW\app\src\main\AndroidManifest.xml:35:9-37:40
-46            android:name="edu.neu.madcourse.numad22sp_jamesouk.A05Main"
-46-->C:\Users\james\OneDrive\Documents\NEU_2022S_CS5520-02\HW\app\src\main\AndroidManifest.xml:36:13-36
-47            android:exported="false" />
-47-->C:\Users\james\OneDrive\Documents\NEU_2022S_CS5520-02\HW\app\src\main\AndroidManifest.xml:37:13-37
-48        <activity
-48-->C:\Users\james\OneDrive\Documents\NEU_2022S_CS5520-02\HW\app\src\main\AndroidManifest.xml:38:9-48:20
-49            android:name="edu.neu.madcourse.numad22sp_jamesouk.A05Rationale"
-49-->C:\Users\james\OneDrive\Documents\NEU_2022S_CS5520-02\HW\app\src\main\AndroidManifest.xml:39:13-41
-50            android:exported="true"
-50-->C:\Users\james\OneDrive\Documents\NEU_2022S_CS5520-02\HW\app\src\main\AndroidManifest.xml:40:13-36
-51            android:permission="android.permission.START_VIEW_PERMISSION_USAGE" >
-51-->C:\Users\james\OneDrive\Documents\NEU_2022S_CS5520-02\HW\app\src\main\AndroidManifest.xml:41:13-80
-52            <intent-filter>
-52-->C:\Users\james\OneDrive\Documents\NEU_2022S_CS5520-02\HW\app\src\main\AndroidManifest.xml:42:13-47:29
-53                <action android:name="android.intent.action.VIEW_PERMISSION_USAGE" />
-53-->C:\Users\james\OneDrive\Documents\NEU_2022S_CS5520-02\HW\app\src\main\AndroidManifest.xml:43:17-86
-53-->C:\Users\james\OneDrive\Documents\NEU_2022S_CS5520-02\HW\app\src\main\AndroidManifest.xml:43:25-83
-54                <action android:name="android.intent.action.VIEW_PERMISSION_USAGE_FOR_PERIOD" />
-54-->C:\Users\james\OneDrive\Documents\NEU_2022S_CS5520-02\HW\app\src\main\AndroidManifest.xml:44:17-97
-54-->C:\Users\james\OneDrive\Documents\NEU_2022S_CS5520-02\HW\app\src\main\AndroidManifest.xml:44:25-94
-55
-56                <category android:name="android.intent.category.DEFAULT" />
-56-->C:\Users\james\OneDrive\Documents\NEU_2022S_CS5520-02\HW\app\src\main\AndroidManifest.xml:46:17-76
-56-->C:\Users\james\OneDrive\Documents\NEU_2022S_CS5520-02\HW\app\src\main\AndroidManifest.xml:46:27-73
-57            </intent-filter>
-58        </activity>
-59        <activity
-59-->[com.google.android.gms:play-services-base:17.5.0] C:\Users\james\.gradle\caches\transforms-3\1258892e6aba1d0321ccf5191ab318e2\transformed\jetified-play-services-base-17.5.0\AndroidManifest.xml:23:9-26:75
-60            android:name="com.google.android.gms.common.api.GoogleApiActivity"
-60-->[com.google.android.gms:play-services-base:17.5.0] C:\Users\james\.gradle\caches\transforms-3\1258892e6aba1d0321ccf5191ab318e2\transformed\jetified-play-services-base-17.5.0\AndroidManifest.xml:24:13-79
-61            android:exported="false"
-61-->[com.google.android.gms:play-services-base:17.5.0] C:\Users\james\.gradle\caches\transforms-3\1258892e6aba1d0321ccf5191ab318e2\transformed\jetified-play-services-base-17.5.0\AndroidManifest.xml:25:13-37
-62            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-62-->[com.google.android.gms:play-services-base:17.5.0] C:\Users\james\.gradle\caches\transforms-3\1258892e6aba1d0321ccf5191ab318e2\transformed\jetified-play-services-base-17.5.0\AndroidManifest.xml:26:13-72
-63
-64        <meta-data
-64-->[com.google.android.gms:play-services-basement:17.5.0] C:\Users\james\.gradle\caches\transforms-3\f7af23d967b93702952e0f13fa1b119e\transformed\jetified-play-services-basement-17.5.0\AndroidManifest.xml:23:9-25:69
-65            android:name="com.google.android.gms.version"
-65-->[com.google.android.gms:play-services-basement:17.5.0] C:\Users\james\.gradle\caches\transforms-3\f7af23d967b93702952e0f13fa1b119e\transformed\jetified-play-services-basement-17.5.0\AndroidManifest.xml:24:13-58
-66            android:value="@integer/google_play_services_version" />
-66-->[com.google.android.gms:play-services-basement:17.5.0] C:\Users\james\.gradle\caches\transforms-3\f7af23d967b93702952e0f13fa1b119e\transformed\jetified-play-services-basement-17.5.0\AndroidManifest.xml:25:13-66
-67    </application>
-68
-69</manifest>
+12    <uses-permission android:name="android.permission.INTERNET" />
+12-->C:\Users\james\OneDrive\Documents\NEU_2022S_CS5520-02\HW\app\src\main\AndroidManifest.xml:6:5-66
+12-->C:\Users\james\OneDrive\Documents\NEU_2022S_CS5520-02\HW\app\src\main\AndroidManifest.xml:6:22-64
+13
+14    <application
+14-->C:\Users\james\OneDrive\Documents\NEU_2022S_CS5520-02\HW\app\src\main\AndroidManifest.xml:8:5-55:19
+15        android:allowBackup="true"
+15-->C:\Users\james\OneDrive\Documents\NEU_2022S_CS5520-02\HW\app\src\main\AndroidManifest.xml:9:9-35
+16        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+16-->[androidx.core:core:1.7.0] C:\Users\james\.gradle\caches\transforms-3\d79cd730aff89e16bbe6bbee05f6ceb1\transformed\core-1.7.0\AndroidManifest.xml:24:18-86
+17        android:extractNativeLibs="false"
+18        android:icon="@mipmap/ic_launcher_jo"
+18-->C:\Users\james\OneDrive\Documents\NEU_2022S_CS5520-02\HW\app\src\main\AndroidManifest.xml:10:9-46
+19        android:label="@string/app_name"
+19-->C:\Users\james\OneDrive\Documents\NEU_2022S_CS5520-02\HW\app\src\main\AndroidManifest.xml:11:9-41
+20        android:roundIcon="@mipmap/ic_launcher_jo_round"
+20-->C:\Users\james\OneDrive\Documents\NEU_2022S_CS5520-02\HW\app\src\main\AndroidManifest.xml:12:9-57
+21        android:supportsRtl="true"
+21-->C:\Users\james\OneDrive\Documents\NEU_2022S_CS5520-02\HW\app\src\main\AndroidManifest.xml:13:9-35
+22        android:testOnly="true"
+23        android:theme="@style/Theme.NUMAD22Sp_JamesOuk" >
+23-->C:\Users\james\OneDrive\Documents\NEU_2022S_CS5520-02\HW\app\src\main\AndroidManifest.xml:14:9-56
+24        <activity
+24-->C:\Users\james\OneDrive\Documents\NEU_2022S_CS5520-02\HW\app\src\main\AndroidManifest.xml:16:9-24:20
+25            android:name="edu.neu.madcourse.numad22sp_jamesouk.MainActivity"
+25-->C:\Users\james\OneDrive\Documents\NEU_2022S_CS5520-02\HW\app\src\main\AndroidManifest.xml:17:13-41
+26            android:exported="true" >
+26-->C:\Users\james\OneDrive\Documents\NEU_2022S_CS5520-02\HW\app\src\main\AndroidManifest.xml:18:13-36
+27            <intent-filter>
+27-->C:\Users\james\OneDrive\Documents\NEU_2022S_CS5520-02\HW\app\src\main\AndroidManifest.xml:19:13-23:29
+28                <action android:name="android.intent.action.MAIN" />
+28-->C:\Users\james\OneDrive\Documents\NEU_2022S_CS5520-02\HW\app\src\main\AndroidManifest.xml:20:17-69
+28-->C:\Users\james\OneDrive\Documents\NEU_2022S_CS5520-02\HW\app\src\main\AndroidManifest.xml:20:25-66
+29
+30                <category android:name="android.intent.category.LAUNCHER" />
+30-->C:\Users\james\OneDrive\Documents\NEU_2022S_CS5520-02\HW\app\src\main\AndroidManifest.xml:22:17-77
+30-->C:\Users\james\OneDrive\Documents\NEU_2022S_CS5520-02\HW\app\src\main\AndroidManifest.xml:22:27-74
+31            </intent-filter>
+32        </activity>
+33        <activity
+33-->C:\Users\james\OneDrive\Documents\NEU_2022S_CS5520-02\HW\app\src\main\AndroidManifest.xml:25:9-27:40
+34            android:name="edu.neu.madcourse.numad22sp_jamesouk.A01"
+34-->C:\Users\james\OneDrive\Documents\NEU_2022S_CS5520-02\HW\app\src\main\AndroidManifest.xml:26:13-32
+35            android:exported="false" />
+35-->C:\Users\james\OneDrive\Documents\NEU_2022S_CS5520-02\HW\app\src\main\AndroidManifest.xml:27:13-37
+36        <activity
+36-->C:\Users\james\OneDrive\Documents\NEU_2022S_CS5520-02\HW\app\src\main\AndroidManifest.xml:28:9-30:40
+37            android:name="edu.neu.madcourse.numad22sp_jamesouk.A03"
+37-->C:\Users\james\OneDrive\Documents\NEU_2022S_CS5520-02\HW\app\src\main\AndroidManifest.xml:29:13-32
+38            android:exported="false" />
+38-->C:\Users\james\OneDrive\Documents\NEU_2022S_CS5520-02\HW\app\src\main\AndroidManifest.xml:30:13-37
+39        <activity
+39-->C:\Users\james\OneDrive\Documents\NEU_2022S_CS5520-02\HW\app\src\main\AndroidManifest.xml:31:9-34:75
+40            android:name="edu.neu.madcourse.numad22sp_jamesouk.A04Main"
+40-->C:\Users\james\OneDrive\Documents\NEU_2022S_CS5520-02\HW\app\src\main\AndroidManifest.xml:32:13-36
+41            android:exported="false"
+41-->C:\Users\james\OneDrive\Documents\NEU_2022S_CS5520-02\HW\app\src\main\AndroidManifest.xml:33:13-37
+42            android:theme="@style/Theme.NUMAD22Sp_JamesOuk.NoActionBar" />
+42-->C:\Users\james\OneDrive\Documents\NEU_2022S_CS5520-02\HW\app\src\main\AndroidManifest.xml:34:13-72
+43        <activity
+43-->C:\Users\james\OneDrive\Documents\NEU_2022S_CS5520-02\HW\app\src\main\AndroidManifest.xml:35:9-37:40
+44            android:name="edu.neu.madcourse.numad22sp_jamesouk.A04Add"
+44-->C:\Users\james\OneDrive\Documents\NEU_2022S_CS5520-02\HW\app\src\main\AndroidManifest.xml:36:13-35
+45            android:exported="false" />
+45-->C:\Users\james\OneDrive\Documents\NEU_2022S_CS5520-02\HW\app\src\main\AndroidManifest.xml:37:13-37
+46        <activity
+46-->C:\Users\james\OneDrive\Documents\NEU_2022S_CS5520-02\HW\app\src\main\AndroidManifest.xml:38:9-40:40
+47            android:name="edu.neu.madcourse.numad22sp_jamesouk.A05Main"
+47-->C:\Users\james\OneDrive\Documents\NEU_2022S_CS5520-02\HW\app\src\main\AndroidManifest.xml:39:13-36
+48            android:exported="false" />
+48-->C:\Users\james\OneDrive\Documents\NEU_2022S_CS5520-02\HW\app\src\main\AndroidManifest.xml:40:13-37
+49        <activity
+49-->C:\Users\james\OneDrive\Documents\NEU_2022S_CS5520-02\HW\app\src\main\AndroidManifest.xml:41:9-51:20
+50            android:name="edu.neu.madcourse.numad22sp_jamesouk.A05Rationale"
+50-->C:\Users\james\OneDrive\Documents\NEU_2022S_CS5520-02\HW\app\src\main\AndroidManifest.xml:42:13-41
+51            android:exported="true"
+51-->C:\Users\james\OneDrive\Documents\NEU_2022S_CS5520-02\HW\app\src\main\AndroidManifest.xml:43:13-36
+52            android:permission="android.permission.START_VIEW_PERMISSION_USAGE" >
+52-->C:\Users\james\OneDrive\Documents\NEU_2022S_CS5520-02\HW\app\src\main\AndroidManifest.xml:44:13-80
+53            <intent-filter>
+53-->C:\Users\james\OneDrive\Documents\NEU_2022S_CS5520-02\HW\app\src\main\AndroidManifest.xml:45:13-50:29
+54                <action android:name="android.intent.action.VIEW_PERMISSION_USAGE" />
+54-->C:\Users\james\OneDrive\Documents\NEU_2022S_CS5520-02\HW\app\src\main\AndroidManifest.xml:46:17-86
+54-->C:\Users\james\OneDrive\Documents\NEU_2022S_CS5520-02\HW\app\src\main\AndroidManifest.xml:46:25-83
+55                <action android:name="android.intent.action.VIEW_PERMISSION_USAGE_FOR_PERIOD" />
+55-->C:\Users\james\OneDrive\Documents\NEU_2022S_CS5520-02\HW\app\src\main\AndroidManifest.xml:47:17-97
+55-->C:\Users\james\OneDrive\Documents\NEU_2022S_CS5520-02\HW\app\src\main\AndroidManifest.xml:47:25-94
+56
+57                <category android:name="android.intent.category.DEFAULT" />
+57-->C:\Users\james\OneDrive\Documents\NEU_2022S_CS5520-02\HW\app\src\main\AndroidManifest.xml:49:17-76
+57-->C:\Users\james\OneDrive\Documents\NEU_2022S_CS5520-02\HW\app\src\main\AndroidManifest.xml:49:27-73
+58            </intent-filter>
+59        </activity>
+60        <activity
+60-->C:\Users\james\OneDrive\Documents\NEU_2022S_CS5520-02\HW\app\src\main\AndroidManifest.xml:52:9-54:40
+61            android:name="edu.neu.madcourse.numad22sp_jamesouk.A06Main"
+61-->C:\Users\james\OneDrive\Documents\NEU_2022S_CS5520-02\HW\app\src\main\AndroidManifest.xml:53:13-36
+62            android:exported="false" />
+62-->C:\Users\james\OneDrive\Documents\NEU_2022S_CS5520-02\HW\app\src\main\AndroidManifest.xml:54:13-37
+63        <activity
+63-->[com.google.android.gms:play-services-base:17.5.0] C:\Users\james\.gradle\caches\transforms-3\1258892e6aba1d0321ccf5191ab318e2\transformed\jetified-play-services-base-17.5.0\AndroidManifest.xml:23:9-26:75
+64            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+64-->[com.google.android.gms:play-services-base:17.5.0] C:\Users\james\.gradle\caches\transforms-3\1258892e6aba1d0321ccf5191ab318e2\transformed\jetified-play-services-base-17.5.0\AndroidManifest.xml:24:13-79
+65            android:exported="false"
+65-->[com.google.android.gms:play-services-base:17.5.0] C:\Users\james\.gradle\caches\transforms-3\1258892e6aba1d0321ccf5191ab318e2\transformed\jetified-play-services-base-17.5.0\AndroidManifest.xml:25:13-37
+66            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+66-->[com.google.android.gms:play-services-base:17.5.0] C:\Users\james\.gradle\caches\transforms-3\1258892e6aba1d0321ccf5191ab318e2\transformed\jetified-play-services-base-17.5.0\AndroidManifest.xml:26:13-72
+67
+68        <meta-data
+68-->[com.google.android.gms:play-services-basement:17.5.0] C:\Users\james\.gradle\caches\transforms-3\f7af23d967b93702952e0f13fa1b119e\transformed\jetified-play-services-basement-17.5.0\AndroidManifest.xml:23:9-25:69
+69            android:name="com.google.android.gms.version"
+69-->[com.google.android.gms:play-services-basement:17.5.0] C:\Users\james\.gradle\caches\transforms-3\f7af23d967b93702952e0f13fa1b119e\transformed\jetified-play-services-basement-17.5.0\AndroidManifest.xml:24:13-58
+70            android:value="@integer/google_play_services_version" />
+70-->[com.google.android.gms:play-services-basement:17.5.0] C:\Users\james\.gradle\caches\transforms-3\f7af23d967b93702952e0f13fa1b119e\transformed\jetified-play-services-basement-17.5.0\AndroidManifest.xml:25:13-66
+71    </application>
+72
+73</manifest>
