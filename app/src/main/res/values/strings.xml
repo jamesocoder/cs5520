@@ -38,4 +38,7 @@
     <string name="a05_timeout">Location request timed out.  Could not determine location within reasonable time.</string>
     <string name="a05_locationOff"><b>[Display Coordinates]</b> will not work unless you turn on Location services.</string>
     <string name="a05_time">Timestamp</string>
+
+    <!-- Assignment 06 -->
+    <string name="a06">Web Service</string>
 </resources>
