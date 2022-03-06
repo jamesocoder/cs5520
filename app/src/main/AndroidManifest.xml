@@ -3,6 +3,7 @@
     package="edu.neu.madcourse.numad22sp_jamesouk">
 
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET"/>
 
     <application
         android:allowBackup="true"
@@ -11,11 +12,13 @@
         android:roundIcon="@mipmap/ic_launcher_jo_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.NUMAD22Sp_JamesOuk">
+
         <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
@@ -46,6 +49,9 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".A06Main"
+            android:exported="false" />
     </application>
 
 </manifest>
