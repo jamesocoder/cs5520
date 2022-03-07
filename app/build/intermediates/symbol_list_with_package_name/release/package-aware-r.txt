@@ -1766,6 +1766,8 @@ id a05_txt_latitude
 id a05_txt_longitude
 id a05_txt_timestamp
 id a06
+id a06_view_btnPingWeb
+id a06_view_datePicker
 id accelerate
 id accessibility_action_clickable_span
 id accessibility_custom_action_0
@@ -2386,6 +2388,7 @@ string a05_required
 string a05_time
 string a05_timeout
 string a06
+string a06_btnPingWeb
 string abc_action_bar_home_description
 string abc_action_bar_up_description
 string abc_action_menu_overflow_description

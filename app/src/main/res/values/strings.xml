@@ -41,4 +41,6 @@
 
     <!-- Assignment 06 -->
     <string name="a06">Web Service</string>
+    <string name="a06_btnPingWeb">Show Astronomy Picture of the Day!</string>
+
 </resources>

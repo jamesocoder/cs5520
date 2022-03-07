@@ -1765,6 +1765,8 @@ int id a05_txt_latitude 0x7f080019
 int id a05_txt_longitude 0x7f08001a
 int id a05_txt_timestamp 0x7f08001b
 int id a06 0x7f0801cf
+int id a06_view_btnPingWeb 0x7f0801d3
+int id a06_view_datePicker 0x7f0801d2
 int id accelerate 0x7f08001c
 int id accessibility_action_clickable_span 0x7f08001d
 int id accessibility_custom_action_0 0x7f08001e
@@ -2385,6 +2387,7 @@ int string a05_required 0x7f0f0017
 int string a05_time 0x7f0f0018
 int string a05_timeout 0x7f0f0019
 int string a06 0x7f0f0090
+int string a06_btnPingWeb 0x7f0f0092
 int string abc_action_bar_home_description 0x7f0f001a
 int string abc_action_bar_up_description 0x7f0f001b
 int string abc_action_menu_overflow_description 0x7f0f001c
