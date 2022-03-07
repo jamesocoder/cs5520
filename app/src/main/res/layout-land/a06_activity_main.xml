@@ -6,16 +6,44 @@
     android:layout_height="match_parent"
     tools:context=".A06Main">
 
-    <TextView
-        android:id="@+id/t1"
+    <ImageView
+        android:id="@+id/a06_view_image"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:text="t1"
+        app:layout_constraintTop_toTopOf="@id/a06_view_btnPingWeb"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/a06_view_btnPingWeb" />
+
+    <TextView
+        android:id="@+id/a06_view_txtDscrpt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/a06_view_txtSource"
+        app:layout_constraintBottom_toTopOf="@id/a06_view_btnPingWeb"/>
+
+    <TextView
+        android:id="@+id/a06_view_txtSource"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:gravity="center"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toTopOf="@id/a06_view_btnPingWeb"
+        app:layout_constraintBottom_toTopOf="@id/a06_view_txtDscrpt"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"/>
+
+    <ProgressBar
+        android:id="@+id/a06_view_progress"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@id/a06_view_image"
+        app:layout_constraintBottom_toBottomOf="@id/a06_view_image"
+        app:layout_constraintStart_toStartOf="@id/a06_view_image"
+        app:layout_constraintEnd_toEndOf="@id/a06_view_image"
+        android:visibility="invisible"/>
 
     <Button
         android:id="@+id/a06_view_btnPingWeb"
@@ -23,6 +51,7 @@
         android:layout_height="wrap_content"
         android:text="@string/a06_btnPingWeb"
         android:onClick="onClick"
+        app:layout_constraintTop_toBottomOf="@id/a06_view_txtDscrpt"
         app:layout_constraintBottom_toTopOf="@id/a06_view_datePicker"
         app:layout_constraintStart_toStartOf="@id/a06_view_datePicker"
         app:layout_constraintEnd_toEndOf="@id/a06_view_datePicker"/>
@@ -34,6 +63,6 @@
         android:datePickerMode="spinner"
         android:calendarViewShown="false"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"/>
+        app:layout_constraintEnd_toEndOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
