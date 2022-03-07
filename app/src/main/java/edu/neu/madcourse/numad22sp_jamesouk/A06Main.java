@@ -107,9 +107,9 @@ public class A06Main extends AppCompatActivity {
                             cpyrght.setText(jObject.getString("copyright"));
                         }
                         if (jObject.has("explanation")) {
-                            description.setText(jObject.getString("explanation"));
+                            description.setText(jObject.getString("explanation").replace('\n', ' '));
                             // This attribute contributes to accessibility (for the blind)
-                            iView.setContentDescription(jObject.getString("explanation"));
+                            iView.setContentDescription(jObject.getString("explanation").replace('\n', ' '));
                         }
                         if (jObject.has("url")) { iView.setImageDrawable(nasaPic); }
                     } catch (JSONException e) {
