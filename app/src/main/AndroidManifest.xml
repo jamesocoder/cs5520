@@ -2,7 +2,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="edu.neu.madcourse.numad22sp_jamesouk">
 
+    <!-- For Assignment 05 -->
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <!-- For Assignment 06 -->
     <uses-permission android:name="android.permission.INTERNET"/>
 
     <application
@@ -18,7 +20,6 @@
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
@@ -45,13 +46,12 @@
             <intent-filter>
                 <action android:name="android.intent.action.VIEW_PERMISSION_USAGE" />
                 <action android:name="android.intent.action.VIEW_PERMISSION_USAGE_FOR_PERIOD" />
-
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
         <activity
             android:name=".A06Main"
             android:exported="false" />
-    </application>
 
+    </application>
 </manifest>
