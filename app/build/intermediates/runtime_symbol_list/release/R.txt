@@ -1767,6 +1767,9 @@ int id a05_txt_timestamp 0x7f08001b
 int id a06 0x7f0801cf
 int id a06_view_btnPingWeb 0x7f0801d3
 int id a06_view_datePicker 0x7f0801d2
+int id a06_view_image 0x7f0801d4
+int id a06_view_txtDscrpt 0x7f0801d5
+int id a06_view_txtSource 0x7f0801d6
 int id accelerate 0x7f08001c
 int id accessibility_action_clickable_span 0x7f08001d
 int id accessibility_custom_action_0 0x7f08001e

@@ -2,11 +2,13 @@ package edu.neu.madcourse.numad22sp_jamesouk;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.os.Handler;
 import android.util.Log;
 import android.view.View;
 import android.widget.DatePicker;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import org.json.JSONException;
@@ -28,17 +30,20 @@ public class A06Main extends AppCompatActivity {
 
     private final String E_TAG = "ERROR A06Main";
     private final CharSequence APOD_MIN = "1995-06-16T00:00:00.00Z";
-    private Handler jsonHandler = new Handler();
+    private final Handler jsonHandler = new Handler();
     private DatePicker datePicker;
     private LocalDate myDate;
-    private TextView t1;
+    private TextView cpyrght, description;
+    private ImageView iView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.a06_activity_main);
 
-        t1 = findViewById(R.id.t1);
+        cpyrght = findViewById(R.id.a06_view_txtSource);
+        description = findViewById(R.id.a06_view_txtDscrpt);
+        iView = findViewById(R.id.a06_view_image);
 
         datePicker = findViewById(R.id.a06_view_datePicker);
         /* Return Current Time using java.time (Java 8 and up)
@@ -64,8 +69,6 @@ public class A06Main extends AppCompatActivity {
                 WebRunnable myRunnable = new WebRunnable();
                 new Thread(myRunnable).start();
                 break;
-            default:
-                return;
         }
     }
 
@@ -76,6 +79,7 @@ public class A06Main extends AppCompatActivity {
 
         String baseUrl = "https://api.nasa.gov/planetary/apod?";
         JSONObject jObject;
+        Drawable nasaPic;
 
         @Override
         public void run() {
@@ -83,11 +87,38 @@ public class A06Main extends AppCompatActivity {
                 URL launchUrl = new URL(baseUrl + "api_key=DEMO_KEY&date=" + myDate.toString());
                 String resp = httpResponse(launchUrl);
                 jObject = new JSONObject(resp);
+                try {
+                    if (jObject.has("url")) {
+                        InputStream is = (InputStream) new URL(jObject.getString("url")).getContent();
+                        nasaPic = Drawable.createFromStream(is, "nasa");
+                    }
+                } catch (MalformedURLException e) {
+                    Log.e(E_TAG, "NASA's image URL is malformed.");
+                    e.printStackTrace();
+                } catch (IOException e) {
+                    Log.e(E_TAG, "Had trouble accessing NASA's image.");
+                    e.printStackTrace();
+                }
                 jsonHandler.post(() -> {
-                   t1.setText(resp);
+                    try {
+                        if (jObject.has("title")) {
+                            cpyrght.setText(jObject.getString("title"));
+                        } else if (jObject.has("copyright")) {
+                            cpyrght.setText(jObject.getString("copyright"));
+                        }
+                        if (jObject.has("explanation")) {
+                            description.setText(jObject.getString("explanation"));
+                            // This attribute contributes to accessibility (for the blind)
+                            iView.setContentDescription(jObject.getString("explanation"));
+                        }
+                        if (jObject.has("url")) { iView.setImageDrawable(nasaPic); }
+                    } catch (JSONException e) {
+                        Log.e(E_TAG, "Retrieved JSON Object may be malformed.");
+                        e.printStackTrace();
+                    }
                 });
             } catch (MalformedURLException e) {
-                Log.e(E_TAG,"MalformedURLException");
+                Log.e(E_TAG,"Prebuilt Web Service URL is malformed.");
                 e.printStackTrace();
             } catch (ProtocolException e) {
                 Log.e(E_TAG,"ProtocolException");
@@ -96,7 +127,7 @@ public class A06Main extends AppCompatActivity {
                 Log.e(E_TAG,"IOException");
                 e.printStackTrace();
             } catch (JSONException e) {
-                Log.e(E_TAG,"JSONException");
+                Log.e(E_TAG,"Could not create a JSON Object.  Web Service may be returning malformed String.");
                 e.printStackTrace();
             }
         }
