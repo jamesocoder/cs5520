@@ -33,9 +33,11 @@ public class A06Main extends AppCompatActivity {
     /* This is the earliest date we can ping NASA's web service for.
        https://apod.nasa.gov/apod/archivepix.html
 
+       For some reason, the DatePicker widget still allows (minimum_day - 1) to be selected, so we
+       add one day to the literal value.
        The date is in this format so that java.time.Instant.parse() can read it without error.
      */
-    private final CharSequence APOD_MIN = "1995-06-16T00:00:00.00Z";
+    private final CharSequence APOD_MIN = "1995-06-17T00:00:00.00Z";
     // This Handler allows worker threads to manipulate Views on the UI Thread
     private final Handler jsonHandler = new Handler();
     // These 2 variables allow us to use the DatePicker widget to get a date to pull an image for
