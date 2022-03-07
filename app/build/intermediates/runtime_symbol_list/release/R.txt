@@ -1768,6 +1768,7 @@ int id a06 0x7f0801cf
 int id a06_view_btnPingWeb 0x7f0801d3
 int id a06_view_datePicker 0x7f0801d2
 int id a06_view_image 0x7f0801d4
+int id a06_view_progress 0x7f0801d7
 int id a06_view_txtDscrpt 0x7f0801d5
 int id a06_view_txtSource 0x7f0801d6
 int id accelerate 0x7f08001c

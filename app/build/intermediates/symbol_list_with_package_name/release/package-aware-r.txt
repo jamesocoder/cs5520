@@ -1769,6 +1769,7 @@ id a06
 id a06_view_btnPingWeb
 id a06_view_datePicker
 id a06_view_image
+id a06_view_progress
 id a06_view_txtDscrpt
 id a06_view_txtSource
 id accelerate

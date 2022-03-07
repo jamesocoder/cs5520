@@ -9,6 +9,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.DatePicker;
 import android.widget.ImageView;
+import android.widget.ProgressBar;
 import android.widget.TextView;
 
 import org.json.JSONException;
@@ -32,6 +33,7 @@ public class A06Main extends AppCompatActivity {
     private final CharSequence APOD_MIN = "1995-06-16T00:00:00.00Z";
     private final Handler jsonHandler = new Handler();
     private DatePicker datePicker;
+    private ProgressBar pBar;
     private LocalDate myDate;
     private TextView cpyrght, description;
     private ImageView iView;
@@ -41,10 +43,6 @@ public class A06Main extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.a06_activity_main);
 
-        cpyrght = findViewById(R.id.a06_view_txtSource);
-        description = findViewById(R.id.a06_view_txtDscrpt);
-        iView = findViewById(R.id.a06_view_image);
-
         datePicker = findViewById(R.id.a06_view_datePicker);
         /* Return Current Time using java.time (Java 8 and up)
            https://docs.oracle.com/javase/10/docs/api/java/time/package-summary.html
@@ -53,6 +51,11 @@ public class A06Main extends AppCompatActivity {
          */
         datePicker.setMaxDate(Instant.now().toEpochMilli());
         datePicker.setMinDate(Instant.parse(APOD_MIN).toEpochMilli());
+
+        pBar = findViewById(R.id.a06_view_progress);
+        cpyrght = findViewById(R.id.a06_view_txtSource);
+        description = findViewById(R.id.a06_view_txtDscrpt);
+        iView = findViewById(R.id.a06_view_image);
     }
 
     public void onClick(View view){
@@ -83,6 +86,12 @@ public class A06Main extends AppCompatActivity {
 
         @Override
         public void run() {
+            jsonHandler.post(() -> { pBar.setVisibility(View.VISIBLE); });
+            try {
+                Thread.sleep(1000);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
             try {
                 URL launchUrl = new URL(baseUrl + "api_key=DEMO_KEY&date=" + myDate.toString());
                 String resp = httpResponse(launchUrl);
@@ -111,6 +120,7 @@ public class A06Main extends AppCompatActivity {
                             // This attribute contributes to accessibility (for the blind)
                             iView.setContentDescription(jObject.getString("explanation").replace('\n', ' '));
                         }
+                        pBar.setVisibility(View.INVISIBLE);
                         if (jObject.has("url")) { iView.setImageDrawable(nasaPic); }
                     } catch (JSONException e) {
                         Log.e(E_TAG, "Retrieved JSON Object may be malformed.");
